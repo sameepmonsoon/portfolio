@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#light {
+  color: red;
+}
+
+#dark {
+  color: blue;
+}
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  margin: 0;
+  height: 100%;
+  background-color: #010026;
+  @apply text-white;
+}
+
+/* for chrome,brave */
+* {
+  /* for firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}

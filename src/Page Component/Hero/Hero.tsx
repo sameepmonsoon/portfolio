@@ -1,0 +1,119 @@
+import React, { useEffect, useState } from "react";
+import defaulUserImage from "../../assets/userImage.svg";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import SocialMediaIcons from "../../Components/SocialMediaIcons/SocialMediaIcons";
+const Hero = (props: {
+  userName: string | any;
+  userIntroduction: string | any;
+  resumeButton?: React.ReactElement;
+  optionalButton?: string;
+  optionalButtonPath?: string;
+  userImage: string;
+}) => {
+  const {
+    userName,
+    userIntroduction,
+    resumeButton,
+    optionalButton,
+    optionalButtonPath,
+    userImage,
+  } = props;
+  return (
+    <section className="snap-start md:flex-row md:justify-center md:items-center md:h-screen gap-16 py-10 px-10 flex flex-col items-center justify-center dark:bg-deep-blue">
+      <div className="heroText order-2  flex flex-col w-[25rem] md:w-[40rem] pr-3 gap-3 text-deep-blue dark:text-white">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: {
+              opacity: 0,
+              x: -50,
+            },
+            visible: {
+              opacity: 1,
+              x: 10,
+            },
+          }}>
+          <p className="text-[2.5rem] font-playfair z-10 text-center md:text-start whitespace-rap capitalize w-full h-auto h-max-[10rem] md:h-auto md:max-h-[7rem] overflow-hidden">
+            {userName}
+          </p>
+          <p className="mt-2 mb-7 md:text-[18px] text-lg text-center md:text-start px-5 md:px-0 break-words max-h-[5.5rem] overflow-hidden">
+            {userIntroduction}
+          </p>
+        </motion.div>
+
+        <motion.div
+          className="flex mt-5 justify-center md:justify-start gap-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: {
+              opacity: 0,
+              x: -50,
+            },
+            visible: {
+              opacity: 1,
+              x: 10,
+            },
+          }}>
+          <span className="flex flex-row transition duration-500 justify-center overflow-hidden flex-nowrap items-center min-h-[2.3rem] text-[1rem] font-semibold max-h-[2.6rem] w-auto max-w-[7rem] min-w-[6rem] px-1 rounded-[5px]  hover:bg-deep-blue hover:text-white hover:border-[1px] hover:border-white text-deep-blue dark:text-white dark:hover:text-deep-blue border-[1px] border-deep-blue dark:border-white dark:hover:bg-white">
+            {resumeButton}
+          </span>
+          <Link
+            to={`/${optionalButtonPath}`}
+            className="flex flex-row transition duration-500 justify-center overflow-hidden flex-nowrap items-center min-h-[2.3rem] text-[1rem] font-semibold max-h-[2.6rem] w-auto max-w-[7rem] min-w-[6rem] px-1 rounded-[5px]  hover:bg-deep-blue hover:text-white hover:border-[1px] hover:border-white text-deep-blue dark:text-white dark:hover:text-deep-blue border-[1px] border-deep-blue dark:border-white dark:hover:bg-white">
+            {optionalButton}
+          </Link>
+        </motion.div>
+
+        <motion.div
+          className="flex mt-5 justify-center md:justify-start gap-10"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: {
+              opacity: 0,
+              x: -50,
+            },
+            visible: {
+              opacity: 1,
+              x: 10,
+            },
+          }}>
+          <SocialMediaIcons />
+        </motion.div>
+      </div>
+      <motion.div
+        className="image order-1 md:order-2 flex justify-center items-start basis-3/5 z-10 mt-16 py-1 w-[20rem] overflow-hidden"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: {
+            opacity: 0,
+            x: 100,
+          },
+          visible: {
+            opacity: 1,
+            x: 0,
+          },
+        }}>
+        <img
+          src={userImage ? userImage : defaulUserImage}
+          alt={""}
+          className="rounded-full w-3/6 h-3/6 animate-[borderWave_10s_linear_infinite]"
+        />
+      </motion.div>
+    </section>
+  );
+};
+
+export default Hero;

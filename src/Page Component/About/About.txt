@@ -1,0 +1,66 @@
+import React from "react";
+import InnerDivSlider from "../../Components/InnerDivSlider/InnerDivSlider";
+type AboutTypes = {
+  AboutDescription: string;
+};
+const About = (props: AboutTypes) => {
+  const { AboutDescription } = props;
+  return (
+    <div className="h-[500px] w-full flex flex-col flex-1 justify-evenly items-center sm:flex-row sm:px-10">
+      <div className="image h-[80%] bg-yellow-300 min-w-[15rem] w-[100%] border-[1px] border-black shadow-[3px_4px_0px_black] sm:w-[15rem] overflow-hidden sm:rounded-[10px] flex flex-col py-1 sm:flex-col gap-5 items-center justify-start cursor-pointer relative">
+        <img
+          src="/src/assets/namah.jpg"
+          alt=""
+          className="px-1 sm:px-0 w-[50%] h-[50%] sm:mt-4 sm:rounded-[10px] sm:w-[90%] sm:h-[40%]"
+        />
+        <span className="p-5 sm:px-5 sm:pb-1 pb-1 sm:relative sm:top-0 sm:right-0 w-[90%] h-[50%] bg-green-400">
+          {AboutDescription}
+        </span>
+      </div>
+      <div className="about-me-content relative bg-blue-200 h-[80%] flex flex-col sm:w-[50%] w-[100%] justify-start items-center px-5 border-[1px] border-black shadow-[3px_4px_0px_black] rounded-[5px]">
+        <span className="capitalize text-[22px] font-bold">About Me</span>
+        <InnerDivSlider
+          aboutMeTitle={[
+            {
+              title: "Skills",
+              details: [{ detailTitle: "aa", detailList: <></> }],
+            },
+            {
+              title: "Experience",
+              details: [
+                {
+                  detailTitle: "aa",
+                  detailList: <>I am from Nepal</>,
+                },
+              ],
+            },
+            {
+              title: "Education",
+              details: [
+                {
+                  detailTitle: "2018 - Present",
+                  detailList: (
+                    <>
+                      <li>BIM From Tribhuvan University</li>
+                    </>
+                  ),
+                },
+                {
+                  detailTitle: "2016 - 2017",
+                  detailList: (
+                    <>
+                      <li>Higher School</li>
+                    </>
+                  ),
+                },
+              ],
+            },
+          ]}
+        />
+        <section></section>
+      </div>
+    </div>
+  );
+};
+
+export default About;

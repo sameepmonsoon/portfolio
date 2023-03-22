@@ -1,0 +1,7 @@
+
+    // <div className="snap snap-y snap-mandatory w-screen h-screen overflow-y-scroll">
+    //   <div className="child1 snap-start bg-yellow h-screen w-screen"></div>
+    //   <div className="child1 snap-end bg-red h-screen w-screen"></div>
+    //   <div className="child1 snap-start bg-blue h-screen w-screen"></div>
+    //   <div className="child1 snap-start bg-grey h-screen w-screen"></div>
+    // </div>
