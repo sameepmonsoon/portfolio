@@ -4,7 +4,7 @@ import HoverCard from "../../Components/HoverCard/HoverCard";
 import ProgressBar from "../../Components/ProgressBar/ProgressBar";
 const SkillsPage = () => {
   return (
-    <div className="flex flex-col justify-center items-center px-20 md:px-10   md:py-10 w-full md:h-screen h-auto py-3 overflow-hidden">
+    <div className="flex flex-col justify-center items-center px-20 md:px-10 sm:justify-center sm:flex-col sm:items-center sm:pl-[14rem] md:py-10 md:justify-center md:items-center w-full min-h-screen py-10 overflow-hidden">
       <motion.div
         className="text-[40px] font-[sans-serif] capitalize"
         initial="hidden"

@@ -1,11 +1,11 @@
 import { AiFillGithub } from "react-icons/ai";
-import { FiExternalLink } from "react-icons/fi";
+import { BiLinkAlt } from "react-icons/all";
 import { Link } from "react-router-dom";
 import Card from "../Components/Card/Card";
 import HomeLayout from "../Layout/HomeLayout";
 import ProjectsComponent from "../Page Component/Projects/ProjectsComponent";
 import { motion } from "framer-motion";
-import projectCardImage from "/src/assets/character.svg";
+import projectCardImage from "/src/assets/character_project1.svg";
 const Projects = () => {
   return (
     <HomeLayout
@@ -48,7 +48,7 @@ const Projects = () => {
                         />
                       </Link>
                       <Link to="https://in.kpop.com.np" target="_blank">
-                        <FiExternalLink
+                        <BiLinkAlt
                           className="transition duration-200 "
                           size={35}
                         />
@@ -93,7 +93,7 @@ const Projects = () => {
                         />
                       </Link>
                       <Link to="https://in.kpop.com.np" target="_blank">
-                        <FiExternalLink
+                        <BiLinkAlt
                           className="transition duration-200 "
                           size={35}
                         />
@@ -140,7 +140,7 @@ const Projects = () => {
                       <Link
                         to="https://github.com/sameeprana/blood-donation.git"
                         target="_blank">
-                        <FiExternalLink
+                        <BiLinkAlt
                           className="transition duration-200 "
                           size={35}
                         />
@@ -177,7 +177,7 @@ const Projects = () => {
                         />
                       </Link>
                       <Link to="https://in.kpop.com.np" target="_blank">
-                        <FiExternalLink
+                        <BiLinkAlt
                           className="transition duration-200 "
                           size={35}
                         />

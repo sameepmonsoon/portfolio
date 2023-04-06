@@ -2,9 +2,10 @@ import React, { useRef } from "react";
 import Card from "../Components/Card/Card";
 import HomeLayout from "../Layout/HomeLayout";
 import { useScroll, motion } from "framer-motion";
-import educationCardImage from "/src/assets/character.svg";
+import educationCardImage from "/src/assets/tu_svg.png";
+import educationCardImage2 from "/src/assets/chhorepatan.png";
 
-const Education = () => {
+const About = () => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
@@ -71,7 +72,7 @@ const Education = () => {
                     +2 Science, <br /> Shree Chhorepatan Higher Seconday School
                   </p>
                 }
-                cardImage={educationCardImage}
+                cardImage={educationCardImage2}
                 cardLinks={<></>}
               />
             </motion.div>
@@ -114,4 +115,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default About;

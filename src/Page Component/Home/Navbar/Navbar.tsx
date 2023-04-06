@@ -54,8 +54,9 @@ const Navbar = (props: NavLinks) => {
             : "fixed left-[-100%] top-0"
         }>
         <Logo otherSection={true} />
-        {LinkName.map((name) => (
+        {LinkName.map((name, index) => (
           <Link
+            key={index}
             to={name.link}
             className={`max-w-[150px] w-[100px] h-[2rem] flex flex-row justify-start items-center border-b-[rgba(255,255,255,0.9)] text-[17px] font-mono pl-1  hover:bg-dark-grey/20 rounded-[1px] ${
               location.pathname == name.link && "bg-dark-grey/20"

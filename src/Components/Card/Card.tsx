@@ -36,7 +36,8 @@ const Card = (props: CardTypes) => {
               (link: React.ReactNode, index: number) => (
                 <span
                   key={index}
-                  className="hover:opacity-90 dark:hover:opacity-80 ">
+                  className="group hover:text-white flex justify-center">
+                  <span className="absolute rounded-full group-hover:bg-dark-grey/40 h-[2.8rem] w-[2.8rem] z-[-1] md:top-[41%] top-[44.5%]"></span>
                   {link}
                 </span>
               )
@@ -44,7 +45,11 @@ const Card = (props: CardTypes) => {
         </span>
       </div>
       <motion.div
-        className="order-1 p-0 m-0 md:w-[22rem] md:h-[100%] h-[10rem] w-[100%]"
+        className={
+          otherSection
+            ? `order-1 py-2 m-0 md:w-[15rem] md:h-[50%] h-[10rem] w-[40%] hover:scale-100 `
+            : `order-1 py-2 m-0 md:w-[22rem] md:h-[100%] h-[10rem] w-[100%]m `
+        }
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 1 }}
@@ -60,7 +65,7 @@ const Card = (props: CardTypes) => {
         <img
           src={cardImage}
           alt="image"
-          className="order-1 h-[100%] rounded-[5px] w-[100%] overflow-hidden mt-5"
+          className="order-1 h-full rounded-[5px] w-full overflow-hidden mt-5"
         />
       </motion.div>
       <div

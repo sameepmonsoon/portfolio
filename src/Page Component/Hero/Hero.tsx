@@ -3,8 +3,13 @@ import defaulUserImage from "../../assets/userImage.svg";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import SocialMediaIcons from "../../Components/SocialMediaIcons/SocialMediaIcons";
-import { RxDoubleArrowDown } from "react-icons/rx";
-import { FaSun } from "react-icons/fa";
+import {
+  AiFillGithub,
+  GrLinkedinOption,
+  AiOutlineInstagram,
+  BsFacebook,
+  ImTwitter,
+} from "react-icons/all";
 const Hero = (props: {
   userName: string | any;
   userIntroduction: string | any;
@@ -39,7 +44,7 @@ const Hero = (props: {
               x: 10,
             },
           }}>
-          <p className="text-[2.5rem] font-playfair z-10 text-center md:text-start whitespace-rap capitalize w-full h-auto h-max-[10rem] md:h-auto md:max-h-[7rem] overflow-hidden">
+          <p className="text-[4rem] font-[fantasy,sans] font-bold z-10 text-center md:text-start whitespace-rap capitalize w-full h-auto h-max-[10rem] md:h-auto md:max-h-[7rem] overflow-hidden">
             {userName}
           </p>
           <p className="mt-2 mb-7 md:text-[18px] text-lg text-center md:text-start px-5 md:px-0 break-words max-h-[5.5rem] overflow-hidden">
@@ -87,7 +92,30 @@ const Hero = (props: {
               x: 10,
             },
           }}>
-          <SocialMediaIcons />
+          <SocialMediaIcons
+            socialMediaLinks={
+              <>
+                <Link to="https://www.github.com">
+                  <AiFillGithub
+                    className=" transition duration-200 "
+                    size={35}
+                  />
+                </Link>
+                <Link to="https://www.LinkedIn.com">
+                  <GrLinkedinOption size={32} />
+                </Link>
+                {/* <Link to="https://www.facebook.com">
+                  <BsFacebook size={32} />
+                </Link>
+                <Link to="https://www.LinkedIn.com">
+                  <AiOutlineInstagram size={35} />
+                </Link> */}
+                <Link to="https://www.LinkedIn.com">
+                  <ImTwitter size={32} />
+                </Link>
+              </>
+            }
+          />
         </motion.div>
       </div>
       <motion.div

@@ -3,13 +3,12 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./Pages/Home";
 import "./App.css";
 import Projects from "./Pages/Projects";
-import Education from "./Pages/Education";
 import Contact from "./Pages/Contact";
 import PageNotFound from "./Pages/PageNotFound";
 import { Helmet } from "react-helmet";
-import image from ".././public/monsoon.jpg";
 import { TbSquareLetterM } from "react-icons/tb";
 import { renderToString } from "react-dom/server";
+import About from "./Pages/About";
 
 export const ThemeContext = createContext<any>(null);
 const App = () => {
@@ -36,8 +35,8 @@ const App = () => {
       element: <Projects />,
     },
     {
-      path: "/education",
-      element: <Education />,
+      path: "/about",
+      element: <About />,
     },
 
     {

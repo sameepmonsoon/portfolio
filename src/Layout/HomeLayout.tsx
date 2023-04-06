@@ -19,8 +19,8 @@ const HomeLayout = (props: HomeTypes) => {
   }, []);
   const NavLinkNames = [
     { label: "Home", link: "/" },
-    { label: "Education", link: "/education" },
     { label: "projects", link: "/projects" },
+    { label: "About", link: "/about" },
     { label: "contact", link: "/contact" },
   ];
 
@@ -29,7 +29,7 @@ const HomeLayout = (props: HomeTypes) => {
       <div className="order-1 z-[1]">
         <Navbar LinkName={NavLinkNames} />
       </div>
-      <div className="order-2 z-[0] mt-[4rem] snap-start">{Children}</div>
+      <div className="order-2 z-[0] mt-[0rem] snap-start">{Children}</div>
       <div className="order-3 snap-start">
         <Footer footerText={"Sameep@2023"} />
       </div>
