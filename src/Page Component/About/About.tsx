@@ -3,7 +3,9 @@ import HoverCard from "../../Components/HoverCard/HoverCard";
 import { motion } from "framer-motion";
 const About = () => {
   return (
-    <div className="md:px-10 my-[10rem] flex md:flex-row flex-col items-center gap-10 justify-start md:justify-around flex-2 md:h-screen snap-start">
+    <div
+      id="about"
+      className="md:px-10 my-[10rem] flex md:flex-row flex-col items-center gap-10 justify-start md:justify-around flex-2 md:h-screen snap-start">
       <motion.div
         initial="hidden"
         whileInView="visible"

@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import image from "/src/assets/monsoon.jpg";
 import Hero from "../Page Component/Hero/Hero";
 import About from "../Page Component/About/About";
@@ -29,7 +27,7 @@ const Home = () => {
             optionalButtonPath={"contact"}
             userName={"Monsoon"}
             userIntroduction={
-              "Hello, I'm Sameep Monsoon Rana, a tech enthusiast. I love to learn and build new things.\
+              "Hello, I'm Sameep Monsoon Rana. I love to learn and build new things.\
             "
             }
           />

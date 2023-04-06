@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import Hero from "../Page Component/Hero/Hero";
-import About from "../Page Component/About/About";
 import Footer from "../Page Component/Home/Footer/Footer";
 import Navbar from "../Page Component/Home/Navbar/Navbar";
 type HomeTypes = {
@@ -34,7 +31,7 @@ const HomeLayout = (props: HomeTypes) => {
       </div>
       <div className="order-2 z-[0] mt-[4rem] snap-start">{Children}</div>
       <div className="order-3 snap-start">
-        <Footer footerText={"@2023 Sameep"} />
+        <Footer footerText={"Sameep@2023"} />
       </div>
     </div>
   );

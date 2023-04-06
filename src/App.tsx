@@ -6,12 +6,23 @@ import Projects from "./Pages/Projects";
 import Education from "./Pages/Education";
 import Contact from "./Pages/Contact";
 import PageNotFound from "./Pages/PageNotFound";
-import { FaReact } from "react-icons/fa";
 import { Helmet } from "react-helmet";
 import image from ".././public/monsoon.jpg";
+import { TbSquareLetterM } from "react-icons/tb";
+import { renderToString } from "react-dom/server";
+
 export const ThemeContext = createContext<any>(null);
 const App = () => {
   const [theme, setTheme] = useState("dark");
+  // Create a styled icon with white fill color
+  const StyledCartIcon = () => (
+    <TbSquareLetterM size={25} style={{ color: "#2CBCE9" }} />
+  );
+
+  // Convert the styled icon to a base64 string
+  const cartIconString = renderToString(<StyledCartIcon />);
+  const cartIconBase64 = btoa(cartIconString);
+
   const toggleTheme = () => {
     setTheme((prev) => (prev == "light" ? "dark" : "light"));
   };
@@ -42,7 +53,11 @@ const App = () => {
     <>
       <Helmet>
         <title>Monsoon</title>
-        <link rel="icon" type="image/svg+xml" href={image} />
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          href={`data:image/svg+xml;base64,${cartIconBase64}`}
+        />
 
         <meta name="description" content="This is a description" />
       </Helmet>

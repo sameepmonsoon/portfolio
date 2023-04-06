@@ -5,7 +5,7 @@ type CardTypes = {
   cardTitle: string | any;
   cardDescription: string | any;
   cardImage: string;
-  cardLinks?: React.ReactElement;
+  cardLinks?: React.ReactHTMLElement;
 };
 const Card = (props: CardTypes) => {
   const { cardTitle, cardDescription, cardImage, cardLinks, otherSection } =
@@ -30,7 +30,17 @@ const Card = (props: CardTypes) => {
         }>
         <div className="h-[100%] w-[100%] blur-1 absolute z-[0] bg-dark-grey/10 dark:bg-deep-blue/90 text-deep-blue dark:text-white"></div>
         <span className="z-[10] flex flex-row gap-10 dark:text-white text-deep-blue bg-clip-text">
-          {cardLinks}
+          {cardLinks &&
+            cardLinks.props.children &&
+            cardLinks.props.children.map(
+              (link: React.ReactNode, index: number) => (
+                <span
+                  key={index}
+                  className="hover:opacity-90 dark:hover:opacity-80 ">
+                  {link}
+                </span>
+              )
+            )}
         </span>
       </div>
       <motion.div
@@ -59,10 +69,12 @@ const Card = (props: CardTypes) => {
             ? `order-2 flex justify-start items-center gap-3 flex-col relative w-[100%] h-[100%] text-deep-blue gap-y-2 dark:text-white bg-white dark:bg-deep-blue rounded-[5px] overflow-hidden`
             : `order-2 p-2 relative md:w-[100%] md:h-[100%] h-[90%] w-[100%] text-deep-blue dark:text-white flex flex-col gap-y-2 bg-white dark:bg-deep-blue rounded-[5px] overflow-hidden`
         }>
-        <h2 className="font-semibold text-[20px] m-0 p-0 overflow-hidden">
+        <h2 className="font-semibold text-[18px] m-0 p-2 text-center w-full overflow-hidden">
           {cardTitle}
         </h2>
-        <p className="overflow-hidden m-0 p-0">{cardDescription} </p>
+        <p className="overflow-hidden m-0 px-3 w-full text-center  md:px-0">
+          {cardDescription}{" "}
+        </p>
       </div>
     </section>
   );

@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
 import { Link } from "react-router-dom";
@@ -42,13 +41,13 @@ const Projects = () => {
                   cardImage={projectCardImage}
                   cardLinks={
                     <>
-                      <Link to="https://www.github.com">
+                      <Link to="https://github.com/sameeprana" target="_blank">
                         <AiFillGithub
                           className="transition duration-200 "
                           size={35}
                         />
                       </Link>
-                      <Link to="https://in.kpop.com.np">
+                      <Link to="https://in.kpop.com.np" target="_blank">
                         <FiExternalLink
                           className="transition duration-200 "
                           size={35}
@@ -85,13 +84,15 @@ const Projects = () => {
                   cardImage={projectCardImage}
                   cardLinks={
                     <>
-                      <Link to="https://github.com/sameeprana/futsal-booking-system.git">
+                      <Link
+                        to="https://github.com/sameeprana/futsal-booking-system.git"
+                        target="_blank">
                         <AiFillGithub
                           className="transition duration-200 "
                           size={35}
                         />
                       </Link>
-                      <Link to="https://in.kpop.com.np">
+                      <Link to="https://in.kpop.com.np" target="_blank">
                         <FiExternalLink
                           className="transition duration-200 "
                           size={35}
@@ -128,13 +129,17 @@ const Projects = () => {
                   cardImage={projectCardImage}
                   cardLinks={
                     <>
-                      <Link to="https://github.com/sameeprana/blood-donation.git">
+                      <Link
+                        to="https://github.com/sameeprana/blood-donation.git"
+                        target="_blank">
                         <AiFillGithub
                           className="transition duration-200 "
                           size={35}
                         />
                       </Link>
-                      <Link to="https://github.com/sameeprana/blood-donation.git">
+                      <Link
+                        to="https://github.com/sameeprana/blood-donation.git"
+                        target="_blank">
                         <FiExternalLink
                           className="transition duration-200 "
                           size={35}
@@ -165,13 +170,13 @@ const Projects = () => {
                   cardImage={projectCardImage}
                   cardLinks={
                     <>
-                      <Link to="https://www.github.com">
+                      <Link to="https://www.github.com" target="_blank">
                         <AiFillGithub
                           className="transition duration-200 "
                           size={35}
                         />
                       </Link>
-                      <Link to="https://in.kpop.com.np">
+                      <Link to="https://in.kpop.com.np" target="_blank">
                         <FiExternalLink
                           className="transition duration-200 "
                           size={35}

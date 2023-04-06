@@ -12,8 +12,8 @@ const Education = () => {
   return (
     <HomeLayout
       Children={
-        <div className="flex flex-col justify-center items-center dark:bg-deep-blue bg-white snap-y snap-mandatory overflow-y-scroll ">
-          <div className="z-[1] snap-start flex flex-row justify-center items-center md:py-10 md:h-screen md:w-screen">
+        <div className="flex flex-col py-[2rem] gap-10 md:gap-5 md:py-2 bg-white justify-center items-center dark:bg-deep-blue  snap-y snap-mandatory overflow-y-scroll ">
+          <div className="z-[1] snap-start flex flex-row justify-center items-center md:py-10  md:h-screen md:w-screen">
             <motion.div
               initial="hidden"
               whileInView="visible"

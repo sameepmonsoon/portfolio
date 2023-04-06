@@ -23,7 +23,7 @@ const LocationContainer = (props: {
   return (
     <div
       //  border-[1px] border-white
-      className={`h-auto max-h-[15rem] py-2 w-[25rem] md:h-auto md:max-h-[15rem] md:w-[30rem] rounded-[2px] bg-deep-bluetext-white flex flex-col justify-start items-center gap-2 dark:bg-deep-blue bg-white text-deep-blue dark:text-white`}>
+      className={`h-auto max-h-[15rem] py-2 w-[21.5rem] max-w-[25] md:h-auto md:max-h-[15rem] md:w-[30rem] bg-white rounded-[2px] bg-deep-bluetext-white flex flex-col justify-start items-start gap-2 dark:bg-deep-blue  text-deep-blue dark:text-white`}>
       {cardTitle && (
         <span className="h-10 w-3/4 flex flex-row justify-start items-center px-2 text-deep-blue dark:text-white font-semibold tracking-wider text-[18px] capitalize">
           {cardTitle}

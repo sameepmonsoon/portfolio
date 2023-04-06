@@ -3,6 +3,8 @@ import defaulUserImage from "../../assets/userImage.svg";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import SocialMediaIcons from "../../Components/SocialMediaIcons/SocialMediaIcons";
+import { RxDoubleArrowDown } from "react-icons/rx";
+import { FaSun } from "react-icons/fa";
 const Hero = (props: {
   userName: string | any;
   userIntroduction: string | any;
@@ -20,7 +22,7 @@ const Hero = (props: {
     userImage,
   } = props;
   return (
-    <section className="snap-start md:flex-row md:justify-center md:items-center md:h-screen gap-16 py-10 px-10 flex flex-col items-center justify-center dark:bg-deep-blue">
+    <section className="snap-start md:flex-row md:h-screen gap-16 py-10 px-10 flex flex-col items-center justify-center dark:bg-deep-blue">
       <div className="heroText order-2  flex flex-col w-[25rem] md:w-[40rem] pr-3 gap-3 text-deep-blue dark:text-white">
         <motion.div
           initial="hidden"
@@ -44,7 +46,6 @@ const Hero = (props: {
             {userIntroduction}
           </p>
         </motion.div>
-
         <motion.div
           className="flex mt-5 justify-center md:justify-start gap-10"
           initial="hidden"
@@ -70,7 +71,6 @@ const Hero = (props: {
             {optionalButton}
           </Link>
         </motion.div>
-
         <motion.div
           className="flex mt-5 justify-center md:justify-start gap-10"
           initial="hidden"

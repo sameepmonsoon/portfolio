@@ -16,7 +16,7 @@ const Experience = () => {
             details: [
               {
                 detailTitle: "aa",
-                detailList: <>I am from Nepal</>,
+                detailList: <>Intership</>,
               },
             ],
           },
@@ -24,10 +24,10 @@ const Experience = () => {
             title: "Education",
             details: [
               {
-                detailTitle: "2018 - Present",
+                detailTitle: "",
                 detailList: (
                   <>
-                    <li>BIM From Tribhuvan University</li>
+                    <li></li>
                   </>
                 ),
               },

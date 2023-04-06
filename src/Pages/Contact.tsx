@@ -1,4 +1,3 @@
-import React from "react";
 import HomeLayout from "../Layout/HomeLayout";
 import GetIntouch from "../Page Component/Contact/GetInTouch";
 
