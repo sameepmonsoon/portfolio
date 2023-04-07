@@ -27,7 +27,7 @@ const Hero = (props: {
     userImage,
   } = props;
   return (
-    <section className="snap-start md:flex-row md:h-screen gap-16 py-10 px-10 flex flex-col items-center justify-center dark:bg-deep-blue">
+    <section className="snap-start md:flex-row md:h-screen gap-16 py-1 px-10 flex flex-col items-center justify-center dark:bg-deep-blue">
       <div className="heroText order-2  flex flex-col w-[25rem] md:w-[40rem] pr-3 gap-3 text-deep-blue dark:text-white">
         <motion.div
           initial="hidden"
@@ -44,7 +44,7 @@ const Hero = (props: {
               x: 10,
             },
           }}>
-          <p className="text-[4rem] font-[fantasy,sans] font-bold z-10 text-center md:text-start whitespace-rap capitalize w-full h-auto h-max-[10rem] md:h-auto md:max-h-[7rem] overflow-hidden">
+          <p className="text-[4rem] font-[fantasy,sans] font-[700] z-10 text-center md:text-start whitespace-rap capitalize w-full h-auto h-max-[10rem] md:h-auto md:max-h-[7rem] overflow-hidden">
             {userName}
           </p>
           <p className="mt-2 mb-7 md:text-[18px] text-lg text-center md:text-start px-5 md:px-0 break-words max-h-[5.5rem] overflow-hidden">

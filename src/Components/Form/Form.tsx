@@ -13,9 +13,9 @@ const Form = () => {
   const [state, handleSubmit] = useForm("mknavgee");
 
   let validationSchema = yup.object().shape({
-    name: yup.string().required("Name is required"),
-    email: yup.string().email().required("Email is Required."),
-    message: yup.string().required("Please, leave some message."),
+    name: yup.string().required("Please enter your name."),
+    email: yup.string().email().required("Please enter your email."),
+    message: yup.string().required("Please enter a message."),
   });
 
   const formik = useFormik({

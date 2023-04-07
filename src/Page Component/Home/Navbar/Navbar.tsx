@@ -24,7 +24,7 @@ const Navbar = (props: NavLinks) => {
               key={index}
               to={name.link}
               className={`px-4
-               hover:bg-deep-blue hover:text-white h-10 flex justify-center items-center rounded-[2px] ${
+               hover:bg-deep-blue  hover:text-white h-10 flex justify-center items-center rounded-[2px] ${
                  // If the name.link has an extra whitespace, it won't retain the selected link. -- bg-color
 
                  location.pathname == name.link && "bg-deep-blue text-white"
@@ -50,15 +50,15 @@ const Navbar = (props: NavLinks) => {
       <div
         className={
           nav
-            ? "fixed md:hidden left-0 top-0 transition-left ease-in-out duration-[800ms] flex flex-col justify-start items-start shadow-[-1px_0px_1px_1px_grey] dark:border-r-white min-w-[12rem] h-full bg-white dark:bg-deep-blue text-deep-blue  dark:text-white pl-5 pt-1 gap-3 uppercase overflow-hidden"
-            : "fixed left-[-100%] top-0"
+            ? "fixed md:hidden left-0 top-0 transition-left ease-in-out duration-[600ms] flex flex-col justify-start items-start shadow-[-1px_0px_1px_1px_grey] dark:border-r-white min-w-[12rem] h-full bg-white dark:bg-deep-blue text-deep-blue  dark:text-white pl-5 pt-1 gap-3 uppercase overflow-hidden"
+            : "fixed md:hidden left-[-100%] top-0 transition-left ease-in-out duration-[1000ms] flex flex-col justify-start items-start shadow-[-1px_0px_1px_1px_grey] dark:border-r-white min-w-[12rem] h-full bg-white dark:bg-deep-blue text-deep-blue  dark:text-white pl-5 pt-1 gap-3 uppercase overflow-hidden"
         }>
         <Logo otherSection={true} />
         {LinkName.map((name, index) => (
           <Link
             key={index}
             to={name.link}
-            className={`max-w-[150px] w-[100px] h-[2rem] flex flex-row justify-start items-center border-b-[rgba(255,255,255,0.9)] text-[17px] font-mono pl-1  hover:bg-dark-grey/20 rounded-[1px] ${
+            className={`pt-1 max-w-[150px] w-[100px] h-[2rem] flex flex-row justify-start items-center border-b-[rgba(255,255,255,0.9)] text-[17px] font-mono pl-1  hover:bg-dark-grey/20 rounded-[1px] ${
               location.pathname == name.link && "bg-dark-grey/20"
             }`}>
             {name.label}

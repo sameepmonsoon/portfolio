@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <HomeLayout
       Children={
-        <div className="snap-mandatory snap-y overflow-y-scroll">
+        <div className="snap-mandatory snap-y overflow-hidden">
           <Hero
             userImage={image}
             resumeButton={

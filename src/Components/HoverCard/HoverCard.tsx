@@ -25,11 +25,9 @@ const HoverCard = (props: HoveCard) => {
       }
       onMouseOver={() => {
         setHover(true);
-        console.log("onOver", hover);
       }}
       onMouseLeave={() => {
         setHover(false);
-        console.log("onLeave", hover);
       }}>
       <div className="relative z-[1] md:h-[8rem] lg:h-[11rem] h-[9rem] flex flex-row justify-around items-center overflow-hidden gap-10 text-deep-blue dark:text-white ">
         <h1
