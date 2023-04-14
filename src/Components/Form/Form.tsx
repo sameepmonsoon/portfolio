@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import * as yup from "yup";
 import { useFormik } from "formik";
 import { IoMdPaperPlane } from "react-icons/io";
-import { Button } from "@mui/material";
 import { motion } from "framer-motion";
-import Spinner from "../Loader/Spinner/Spinner";
 import { useForm } from "@formspree/react";
 import SpecialButton from "../SpecialButton/SpecialButton";
+import { toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Form = () => {
   const [mouseOver, setMouseOver] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -29,6 +29,13 @@ const Form = () => {
       setIsLoading(true);
       setTimeout(() => {
         if (state.succeeded) {
+          toast("Message Sent", {
+            theme: "colored",
+            hideProgressBar: true,
+            autoClose: 1000,
+            icon: "false",
+          });
+
           setIsLoading(false);
           resetForm();
         }

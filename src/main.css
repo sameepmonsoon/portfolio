@@ -1,4 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap");
+
+/* Specify backup font for Open Sans */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url("https://fonts.gstatic.com/s/opensans/v22/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf")
+      format("truetype");
+}
+
+/* Specify backup font for Playfair Display */
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Playfair Display Regular"), local("PlayfairDisplay-Regular"),
+    url("https://fonts.gstatic.com/s/playfairdisplay/v34/nuFiD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KNz_XX.woff2")
+      format("woff2");
+}
+
+/* Use fallback fonts */
+body {
+  font-family: "Open Sans", "Playfair Display", sans-serif;
+}
+
+/* Your existing code */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

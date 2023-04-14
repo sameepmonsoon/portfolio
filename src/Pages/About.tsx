@@ -18,7 +18,7 @@ const About = () => {
   return (
     <HomeLayout
       Children={
-        <>
+        <div className="pb-20">
           <p className="dark:text-white text-deep-blue flex flex-col items-center justify-center font-[fantasy,sans] font-[1000] min-h-[13rem] md:text-start whitespace-norap capitalize h-max-[25rem] md:h-auto md:max-h-[7rem] overflow-hidden w-full">
             <span className="text-[3rem] sm:text-[4rem] italic text-center font-[fantasy,sans] font-[1000] whitespace-rap capitalize ">
               Sameep Monsoon Rana
@@ -226,9 +226,9 @@ const About = () => {
                   </p>
                 </span>
               </motion.div>
-            </div>{" "}
+            </div>
           </div>
-        </>
+        </div>
       }
     />
   );

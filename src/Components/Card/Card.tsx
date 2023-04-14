@@ -5,7 +5,7 @@ type CardTypes = {
   cardTitle: string | any;
   cardDescription: string | any;
   cardImage: string;
-  cardLinks?: React.ReactHTMLElement;
+  cardLinks?: any;
 };
 const Card = (props: CardTypes) => {
   const { cardTitle, cardDescription, cardImage, cardLinks, otherSection } =

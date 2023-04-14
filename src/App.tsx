@@ -9,7 +9,8 @@ import { Helmet } from "react-helmet";
 import { TbSquareLetterM } from "react-icons/tb";
 import { renderToString } from "react-dom/server";
 import About from "./Pages/About";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export const ThemeContext = createContext<any>(null);
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -61,6 +62,10 @@ const App = () => {
         <meta name="description" content="This is a description" />
       </Helmet>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
+        <ToastContainer
+
+          bodyClassName="w-full h-full  dark:bg-deep-blue bg-white text-deep-blue dark:text-white"
+        />
         <RouterProvider router={router} />
       </ThemeContext.Provider>
     </>

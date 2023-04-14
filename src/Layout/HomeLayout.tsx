@@ -25,7 +25,7 @@ const HomeLayout = (props: HomeTypes) => {
   ];
 
   return (
-    <div className="flex flex-col overflow-hidden dark:bg-deep-blue bg-white  snap-proximity scroll-smooth">
+    <div className="flex flex-col overflow-hidden dark:bg-deep-blue bg-white  snap-proximity scroll-smooth font-playfair">
       <div className="order-1 z-[1]">
         <Navbar LinkName={NavLinkNames} />
       </div>
@@ -33,7 +33,7 @@ const HomeLayout = (props: HomeTypes) => {
         {Children}
       </div>
       <div className="order-3 snap-start">
-        <Footer footerText={"Sameep@2023"} />
+        <Footer footerText={"@2023 By Monsoon"} />
       </div>
     </div>
   );

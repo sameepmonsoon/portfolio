@@ -40,7 +40,7 @@ const SkillsPage = () => {
             <HoverCard
               hoverTransitionTitle="html"
               subTitle="html"
-              progressBar={<ProgressBar showText={true} level={90} />}
+              progressBar={<ProgressBar showText={true} level={80} />}
             />
           </motion.div>
           <motion.div
@@ -61,7 +61,7 @@ const SkillsPage = () => {
             <HoverCard
               hoverTransitionTitle="CSS"
               subTitle="CSS"
-              progressBar={<ProgressBar showText={true} level={80} />}
+              progressBar={<ProgressBar showText={true} level={75} />}
             />
           </motion.div>
           <motion.div
@@ -83,7 +83,7 @@ const SkillsPage = () => {
               transitionTitleColor="#fddb4f"
               hoverTransitionTitle="JavaScript"
               subTitle="JavaScript"
-              progressBar={<ProgressBar showText={true} level={60} />}
+              progressBar={<ProgressBar showText={true} level={55} />}
             />
           </motion.div>
           <motion.div
@@ -146,7 +146,7 @@ const SkillsPage = () => {
             <HoverCard
               hoverTransitionTitle="Git & Github"
               subTitle="Git & Github"
-              progressBar={<ProgressBar showText={true} level={50} />}
+              progressBar={<ProgressBar showText={true} level={40} />}
             />
           </motion.div>
         </div>

@@ -17,7 +17,7 @@ const Navbar = (props: NavLinks) => {
   return (
     <div className="fixed z-[10] border-b-[1px] bg-b-[0px 1px 2px fixed rgba(0, 0, 0, 0.1)] h-[64px] w-[100vw] overflow-hidden flex font-bold flex-row px-[2rem] items-center justify-center bg-white ">
       <Logo />
-      <div className=" flex h-[100%] flex-row flex-1 justify-end items-center gap-5 text-[18px] text-deep-blue font-[400]">
+      <div className=" flex h-[100%] flex-row flex-1 justify-end items-center gap-5 text-[18px] text-deep-blue font-[400] font-sans">
         <div className="hidden relative uppercase md:flex  justify-center items-center gap-1">
           {LinkName.map((name, index) => (
             <Link
@@ -58,7 +58,7 @@ const Navbar = (props: NavLinks) => {
           <Link
             key={index}
             to={name.link}
-            className={`pt-1 max-w-[150px] w-[100px] h-[2rem] flex flex-row justify-start items-center border-b-[rgba(255,255,255,0.9)] text-[17px] font-mono pl-1  hover:bg-dark-grey/20 rounded-[1px] ${
+            className={`pt-[0px] max-w-[150px] w-[100px] h-[2rem] flex flex-row justify-start items-center border-b-[rgba(255,255,255,0.9)] text-[17px]  pl-1 hover:bg-dark-grey/20 rounded-[1px] ${
               location.pathname == name.link && "bg-dark-grey/20"
             }`}>
             {name.label}
