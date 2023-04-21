@@ -95,7 +95,7 @@ const Hero = (props: {
           <SocialMediaIcons
             socialMediaLinks={
               <>
-                <Link to="https://www.github.com">
+                <Link to="https://github.com/sameeprana" target="_blank">
                   <AiFillGithub
                     className=" transition duration-200 "
                     size={35}

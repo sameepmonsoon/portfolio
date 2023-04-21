@@ -6,6 +6,7 @@ import HomeLayout from "../Layout/HomeLayout";
 import ProjectsComponent from "../Page Component/Projects/ProjectsComponent";
 import { motion } from "framer-motion";
 import projectCardImage from "/src/assets/character_project1.svg";
+import restaurant from "/src/assets/restaurant.svg";
 import amazon from "/src/assets/amazon-3.svg";
 import twitter from "/src/assets/twitter.svg";
 import futsal from "/src/assets/futsal.svg";
@@ -42,7 +43,7 @@ const Projects = () => {
                       orders, track inventory, and view sales reports.
                     </p>
                   }
-                  cardImage={projectCardImage}
+                  cardImage={restaurant}
                   cardLinks={
                     <>
                       <Link to="https://github.com/sameeprana" target="_blank">
@@ -52,98 +53,6 @@ const Projects = () => {
                         />
                       </Link>
                       <Link to="https://in.kpop.com.np" target="_blank">
-                        <BiLinkAlt
-                          className="transition duration-200 "
-                          size={35}
-                        />
-                      </Link>
-                    </>
-                  }
-                />
-              </motion.div>
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ delay: 0.4, duration: 0.5 }}
-                variants={{
-                  hidden: {
-                    opacity: 0,
-                    x: -50,
-                  },
-                  visible: {
-                    opacity: 1,
-                    x: 0,
-                  },
-                }}>
-                <Card
-                  cardTitle="Futsal Booking System"
-                  cardDescription={
-                    <p>
-                      Futsal Booking System is a web application based on Django
-                      that allows players to book and pay for futsal courts
-                      online.
-                    </p>
-                  }
-                  cardImage={futsal}
-                  cardLinks={
-                    <>
-                      <Link
-                        to="https://github.com/sameeprana/futsal-booking-system.git"
-                        target="_blank">
-                        <AiFillGithub
-                          className="transition duration-200 "
-                          size={35}
-                        />
-                      </Link>
-                      <Link to="https://in.kpop.com.np" target="_blank">
-                        <BiLinkAlt
-                          className="transition duration-200 "
-                          size={35}
-                        />
-                      </Link>
-                    </>
-                  }
-                />{" "}
-              </motion.div>
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
-                variants={{
-                  hidden: {
-                    opacity: 0,
-                    x: -50,
-                  },
-                  visible: {
-                    opacity: 1,
-                    x: 0,
-                  },
-                }}>
-                <Card
-                  cardTitle="Blood Donation Portal"
-                  cardDescription={
-                    <p>
-                      Blood Donation Project is a web-based system build for
-                      donating blood. It works along with NGOs and helps to
-                      spread awareness about blood donation.
-                    </p>
-                  }
-                  cardImage={blood}
-                  cardLinks={
-                    <>
-                      <Link
-                        to="https://github.com/sameeprana/blood-donation.git"
-                        target="_blank">
-                        <AiFillGithub
-                          className="transition duration-200 "
-                          size={35}
-                        />
-                      </Link>
-                      <Link
-                        to="https://github.com/sameeprana/blood-donation.git"
-                        target="_blank">
                         <BiLinkAlt
                           className="transition duration-200 "
                           size={35}
@@ -205,7 +114,7 @@ const Projects = () => {
               <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.3}}
                 transition={{ delay: 0.6, duration: 0.5 }}
                 variants={{
                   hidden: {
@@ -250,11 +159,103 @@ const Projects = () => {
                     </>
                   }
                 />
+              </motion.div>{" "}
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                    x: -50,
+                  },
+                  visible: {
+                    opacity: 1,
+                    x: 0,
+                  },
+                }}>
+                <Card
+                  cardTitle="Futsal Booking System"
+                  cardDescription={
+                    <p>
+                      Futsal Booking System is a web application based on Django
+                      that allows players to book and pay for futsal courts
+                      online.
+                    </p>
+                  }
+                  cardImage={futsal}
+                  cardLinks={
+                    <>
+                      <Link
+                        to="https://github.com/sameeprana/futsal-booking-system.git"
+                        target="_blank">
+                        <AiFillGithub
+                          className="transition duration-200 "
+                          size={35}
+                        />
+                      </Link>
+                      <Link to="https://in.kpop.com.np" target="_blank">
+                        <BiLinkAlt
+                          className="transition duration-200 "
+                          size={35}
+                        />
+                      </Link>
+                    </>
+                  }
+                />{" "}
               </motion.div>
               <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
+                viewport={{ once: true, amount: 0.1 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                    x: -50,
+                  },
+                  visible: {
+                    opacity: 1,
+                    x: 0,
+                  },
+                }}>
+                <Card
+                  cardTitle="Blood Donation Portal"
+                  cardDescription={
+                    <p>
+                      Blood Donation Project is a web-based system build for
+                      donating blood. It works along with NGOs and helps to
+                      spread awareness about blood donation.
+                    </p>
+                  }
+                  cardImage={blood}
+                  cardLinks={
+                    <>
+                      <Link
+                        to="https://github.com/sameeprana/blood-donation.git"
+                        target="_blank">
+                        <AiFillGithub
+                          className="transition duration-200 "
+                          size={35}
+                        />
+                      </Link>
+                      <Link
+                        to="https://github.com/sameeprana/blood-donation.git"
+                        target="_blank">
+                        <BiLinkAlt
+                          className="transition duration-200 "
+                          size={35}
+                        />
+                      </Link>
+                    </>
+                  }
+                />
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
                 variants={{
                   hidden: {
@@ -268,7 +269,14 @@ const Projects = () => {
                 }}>
                 <Card
                   cardTitle="Side Projects"
-                  cardDescription={<p>other</p>}
+                  cardDescription={
+                    <p>
+                      Some of the completed projects include Gaming website
+                      template,Login authenticator, Product page, Redux page
+                      etc. I'm constantly working on new projects, so be sure to
+                      check back often for updates.
+                    </p>
+                  }
                   cardImage={projectCardImage}
                   cardLinks={
                     <>

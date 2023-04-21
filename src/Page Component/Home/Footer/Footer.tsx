@@ -14,7 +14,7 @@ type FooterProps = {
 const Footer = (props: FooterProps) => {
   const { footerText } = props;
   return (
-    <div className="flex flex-col gap-1 border-t-[1px] border-t-gray-300 h-[200px]  w-full justify-center items-center text-[18px] dark:bg-deep-blue bg-white text-deep-blue dark:text-white ">
+    <div className="flex flex-col gap-1 border-t-[1px] border-t-gray-200 dark:border-t-white/20 h-[200px]  w-full justify-center items-center text-[18px] dark:bg-deep-blue bg-white text-deep-blue dark:text-white ">
       <span className="order-2">{footerText}</span>
       <SocialMediaIcons
         // @ts-ignore
