@@ -6,6 +6,10 @@ import HomeLayout from "../Layout/HomeLayout";
 import ProjectsComponent from "../Page Component/Projects/ProjectsComponent";
 import { motion } from "framer-motion";
 import projectCardImage from "/src/assets/character_project1.svg";
+import amazon from "/src/assets/amazon-3.svg";
+import twitter from "/src/assets/twitter.svg";
+import futsal from "/src/assets/futsal.svg";
+import blood from "/src/assets/blood-doctors.svg";
 const Projects = () => {
   return (
     <HomeLayout
@@ -81,7 +85,7 @@ const Projects = () => {
                       online.
                     </p>
                   }
-                  cardImage={projectCardImage}
+                  cardImage={futsal}
                   cardLinks={
                     <>
                       <Link
@@ -126,7 +130,7 @@ const Projects = () => {
                       spread awareness about blood donation.
                     </p>
                   }
-                  cardImage={projectCardImage}
+                  cardImage={blood}
                   cardLinks={
                     <>
                       <Link
@@ -165,18 +169,120 @@ const Projects = () => {
                   },
                 }}>
                 <Card
-                  cardTitle="Restaurant Management System"
-                  cardDescription=""
-                  cardImage={projectCardImage}
+                  cardTitle="Twitter Clone"
+                  cardDescription={
+                    <p>
+                      This is a Twitter clone app built using the MERN stack
+                      (MongoDB, Express.js, React.js, Node.js) and other
+                      technologies including Tailwind CSS, TypeScript, React
+                      Router DOM, React Icons, JWT verification, and features
+                      such as follow, like, and explore.
+                    </p>
+                  }
+                  cardImage={twitter}
                   cardLinks={
                     <>
-                      <Link to="https://www.github.com" target="_blank">
+                      <Link
+                        to="https://github.com/sameeprana/mern-twitter-clone"
+                        target="_blank">
                         <AiFillGithub
                           className="transition duration-200 "
                           size={35}
                         />
                       </Link>
-                      <Link to="https://in.kpop.com.np" target="_blank">
+                      <Link
+                        to="https://mern-twitter-clone.vercel.app/"
+                        target="_blank">
+                        <BiLinkAlt
+                          className="transition duration-200 "
+                          size={35}
+                        />
+                      </Link>
+                    </>
+                  }
+                />
+              </motion.div>{" "}
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.6, duration: 0.5 }}
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                    x: -50,
+                  },
+                  visible: {
+                    opacity: 1,
+                    x: 0,
+                  },
+                }}>
+                <Card
+                  cardTitle="Amazon Clone"
+                  cardDescription={
+                    <p>
+                      This project is a full-stack web application clone of
+                      Amazon with MERN (MongoDB, Express, React, Node.js) stack.
+                      The application allows users to browse products, add them
+                      to the cart, and purchase them with Stripe payment gateway
+                      integration.
+                    </p>
+                  }
+                  cardImage={amazon}
+                  cardLinks={
+                    <>
+                      <Link
+                        to="https://github.com/sameeprana/Amazon_clone"
+                        target="_blank">
+                        <AiFillGithub
+                          className="transition duration-200 "
+                          size={35}
+                        />
+                      </Link>
+                      <Link
+                        to="https://mern-amazon-clone.vercel.app/"
+                        target="_blank">
+                        <BiLinkAlt
+                          className="transition duration-200 "
+                          size={35}
+                        />
+                      </Link>
+                    </>
+                  }
+                />
+              </motion.div>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.6, duration: 0.5 }}
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                    x: -50,
+                  },
+                  visible: {
+                    opacity: 1,
+                    x: 0,
+                  },
+                }}>
+                <Card
+                  cardTitle="Side Projects"
+                  cardDescription={<p>other</p>}
+                  cardImage={projectCardImage}
+                  cardLinks={
+                    <>
+                      <Link
+                        to="https://github.com/sameeprana?tab=repositories"
+                        target="_blank">
+                        <AiFillGithub
+                          className="transition duration-200 "
+                          size={35}
+                        />
+                      </Link>
+                      <Link
+                        to="https://github.com/sameeprana?tab=repositories"
+                        target="_blank">
                         <BiLinkAlt
                           className="transition duration-200 "
                           size={35}

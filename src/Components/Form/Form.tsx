@@ -28,17 +28,37 @@ const Form = () => {
       handleSubmit(values);
       setIsLoading(true);
       setTimeout(() => {
-        if (state.succeeded) {
-          toast("Message Sent", {
-            theme: "colored",
-            hideProgressBar: true,
-            autoClose: 1000,
-            icon: "false",
-          });
+        const toastId = "alert";
+        const existingToast = toast.isActive(toastId);
 
-          setIsLoading(false);
-          resetForm();
+        if (existingToast) {
+          toast.update(toastId, {
+            render: "Thank you for your message. I will be in touch soon.",
+            autoClose: 1000,
+          });
+        } else {
+          toast("Thank you for your message. I will be in touch soon.", {
+            toastId: toastId,
+            className: "toast-center",
+            position: "bottom-center",
+            autoClose: 1000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            closeButton: false,
+            transition: Slide,
+            icon: false,
+            style: {
+              backgroundColor: "#E7FFF1;",
+              color: "#010026",
+            },
+          });
         }
+        setIsLoading(false);
+        resetForm();
       }, 1000);
     },
     validationSchema: validationSchema,

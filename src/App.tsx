@@ -62,10 +62,7 @@ const App = () => {
         <meta name="description" content="This is a description" />
       </Helmet>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
-        <ToastContainer
-
-          bodyClassName="w-full h-full  dark:bg-deep-blue bg-white text-deep-blue dark:text-white"
-        />
+        <ToastContainer className="text-center" />
         <RouterProvider router={router} />
       </ThemeContext.Provider>
     </>

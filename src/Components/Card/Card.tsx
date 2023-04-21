@@ -65,7 +65,7 @@ const Card = (props: CardTypes) => {
         <img
           src={cardImage}
           alt="image"
-          className="order-1 h-full rounded-[5px] w-full overflow-hidden mt-5"
+          className="order-1 h-full rounded-[5px] w-full overflow-hidden mt-5 p-3"
         />
       </motion.div>
       <div

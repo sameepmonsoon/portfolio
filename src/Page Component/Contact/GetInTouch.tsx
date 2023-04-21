@@ -1,11 +1,9 @@
-import React, { useState, useRef } from "react";
 import { MdPhone } from "react-icons/md";
 import { TbBrandGmail } from "react-icons/tb";
 import { VscLocation } from "react-icons/vsc";
 import Form from "../../Components/Form/Form";
 import LocationContainer from "../../Components/LocationContainer/LocationContainer";
 import { motion } from "framer-motion";
-import Spinner from "../../Components/Loader/Spinner/Spinner";
 const GetIntouch = () => {
   return (
     <section className="flex flex-col justify-center items-center md:gap-[5rem] py-10">
@@ -58,7 +56,7 @@ const GetIntouch = () => {
       </div>
       <motion.div
         className="order-3 py-10"
-        initial="hidden"
+        initial="visible"
         whileInView="visible"
         viewport={{ once: true, amount: 1 }}
         transition={{ duration: 0.5 }}
