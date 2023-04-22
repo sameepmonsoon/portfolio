@@ -17,18 +17,19 @@ const Navbar = (props: NavLinks) => {
   return (
     <div className="fixed z-[10] border-b-[1px] bg-b-[0px 1px 2px fixed rgba(0, 0, 0, 0.1)] h-[64px] w-[100vw] overflow-hidden flex font-bold flex-row px-[2rem] items-center justify-center bg-white ">
       <Logo />
-      <div className=" flex h-[100%] flex-row flex-1 justify-end items-center gap-5 text-[18px] text-deep-blue font-[400] font-sans">
+      <div className=" flex h-[100%] flex-row flex-1 justify-end items-center gap-5 text-[16px] text-deep-blue font-[400] font-sans">
         <div className="hidden relative uppercase md:flex  justify-center items-center gap-1">
           {LinkName.map((name, index) => (
             <Link
               key={index}
               to={name.link}
               className={`px-4
-               hover:bg-deep-blue  hover:text-white h-10 flex justify-center items-center rounded-[2px] ${
-                 // If the name.link has an extra whitespace, it won't retain the selected link. -- bg-color
+              hover:bg-deep-blue/10  hover:text-deep-blue h-10 flex justify-center items-center rounded-[4px] ${
+                // If the name.link has an extra whitespace, it won't retain the selected link. -- bg-color
 
-                 location.pathname == name.link && "bg-deep-blue text-white"
-               }`}
+                location.pathname == name.link &&
+                "bg-deep-blue/10  text-deep-blue"
+              }`}
               onClick={() => {
                 window.scrollTo({
                   top: 0,
@@ -60,7 +61,13 @@ const Navbar = (props: NavLinks) => {
             to={name.link}
             className={`pt-[0px] max-w-[150px] w-[100px] h-[2rem] flex flex-row justify-start items-center border-b-[rgba(255,255,255,0.9)] text-[17px]  pl-1 hover:bg-dark-grey/20 rounded-[1px] ${
               location.pathname == name.link && "bg-dark-grey/20"
-            }`}>
+            }`}
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}>
             {name.label}
           </Link>
         ))}

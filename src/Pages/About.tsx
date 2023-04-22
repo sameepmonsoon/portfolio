@@ -42,7 +42,7 @@ const About = () => {
                 y: 0,
               },
             }}>
-            <span className="w-[60rem] border-[1px] border-gray-300 p-5 rounded-[10px] cursor-pointer hover:border-gray-400">
+            <span className="w-[60rem] border-[1px] border-gray-300 dark:border-white/30 p-5 rounded-[10px] cursor-pointer hover:border-gray-400 dark:hover:border-white/40">
               I'm a software developer with experience in JavaScript, React, and
               related libraries. My passion lies in creating engaging,
               responsive user interfaces that enhance the overall user
@@ -92,7 +92,7 @@ const About = () => {
                       y: 0,
                     },
                   }}>
-                  <span className="group w-[120px] h-[80px] hover:border-gray-400  cursor-pointer rounded-[10px] flex flex-row justify-center items-center border-[1px] border-gray-300">
+                  <span className="group w-[120px] h-[80px] hover:border-gray-400 dark:hover:border-white/40  cursor-pointer rounded-[10px] flex flex-row justify-center items-center border-[1px] border-gray-300 dark:border-white/30">
                     <IoSchoolSharp size={45} className="group-hover:" />
                   </span>
                   <span>
@@ -124,7 +124,7 @@ const About = () => {
                       y: 0,
                     },
                   }}>
-                  <span className="w-[120px] h-[80px] hover:border-gray-400 cursor-pointer rounded-[10px] flex flex-row justify-center items-center border-[1px] border-gray-300">
+                  <span className="group w-[120px] h-[80px] hover:border-gray-400 dark:hover:border-white/40  cursor-pointer rounded-[10px] flex flex-row justify-center items-center border-[1px] border-gray-300 dark:border-white/30">
                     <FaSchool size={45} />
                   </span>
                   <span>
@@ -153,7 +153,7 @@ const About = () => {
                       y: 0,
                     },
                   }}>
-                  <span className="w-[120px] h-[80px] hover:border-gray-400 cursor-pointer text-deep-blue dark:text-white rounded-[10px] flex flex-row justify-center items-center border-[1px] border-gray-300">
+                  <span className="group w-[120px] h-[80px] hover:border-gray-400 dark:hover:border-white/40  cursor-pointer rounded-[10px] flex flex-row justify-center items-center border-[1px] border-gray-300 dark:border-white/30">
                     <TbCertificate size={45} />
                   </span>
                   <span className="w-auto">
@@ -205,7 +205,7 @@ const About = () => {
                     y: 0,
                   },
                 }}>
-                <span className="group min-w-[120px] h-[80px] hover:border-gray-400 cursor-pointer rounded-[10px] flex flex-row justify-center items-center border-[1px] border-gray-300">
+                <span className="group min-w-[120px] h-[80px] hover:border-gray-400 cursor-pointer rounded-[10px] flex flex-row justify-center items-center border-[1px] border-gray-300 dark:border-white/30 dark:hover:border-white/40 ">
                   <FaLaptopCode size={45} className="group-hover:" />
                 </span>
                 <span className="w-3/5 sm:w-3/4 md:w-full">

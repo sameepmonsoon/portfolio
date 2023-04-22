@@ -93,7 +93,7 @@ const Form = () => {
         }}>
         <input
           maxLength={30}
-          className="h-[3rem] w-[20rem] md:w-[25rem]  tracking-wider rounded-[2px] text-deep-blue p-2 flex flex-row justify-center items-center capitalize border-[1px] border-deep-blue dark:border-0  focus:outline-none focus:ring-1 focus:ring-deep-blue focus:border-transparent"
+          className="h-[3rem] w-[20rem] md:w-[25rem]  tracking-wider rounded-[2px] text-deep-blue p-2 flex flex-row justify-center items-center capitalize border-[1px] border-deep-blue/50 dark:border-0  focus:outline-none focus:ring-1 focus:ring-deep-blue/80 focus:border-transparent"
           type="text"
           name="name"
           id="name"
@@ -126,7 +126,7 @@ const Form = () => {
         }}>
         <input
           maxLength={30}
-          className="h-[3rem] w-[20rem] md:w-[25rem] tracking-wider rounded-[2px] text-deep-blue p-2 flex flex-row justify-center items-center capitalize border-[1px] border-deep-blue dark:border-0  focus:outline-none focus:ring-1 focus:ring-deep-blue focus:border-transparent"
+          className="h-[3rem] w-[20rem] md:w-[25rem] tracking-wider rounded-[2px] text-deep-blue p-2 flex flex-row justify-center items-center capitalize border-[1px] border-deep-blue/50 dark:border-0  focus:outline-none focus:ring-1 focus:ring-deep-blue/80 focus:border-transparent"
           type="email"
           name="email"
           id="email"
@@ -157,7 +157,7 @@ const Form = () => {
           },
         }}>
         <textarea
-          className="h-[6rem] w-[20rem] md:w-[25rem] resize-none tracking-wider rounded-[2px] text-deep-blue p-2 flex flex-row justify-center items-center capitalize border-[1px] border-deep-blue dark:border-0  focus:outline-none focus:ring-1 focus:ring-deep-bluefocus:border-transparent"
+          className="h-[6rem] w-[20rem] md:w-[25rem] resize-none tracking-wider rounded-[2px] text-deep-blue p-2 flex flex-row justify-center items-center capitalize border-[1px] border-deep-blue/50 dark:border-0  focus:outline-none focus:ring-1 focus:ring-deep-blue/80 focus:border-transparent"
           name="message"
           id="message"
           cols={30}

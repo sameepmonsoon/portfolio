@@ -67,12 +67,12 @@ const Hero = (props: {
               x: 10,
             },
           }}>
-          <span className="flex flex-row transition duration-500 justify-center overflow-hidden flex-nowrap items-center min-h-[2.3rem] text-[1rem] font-semibold max-h-[2.6rem] w-auto max-w-[7rem] min-w-[6rem] px-1 rounded-[5px]  hover:bg-deep-blue hover:text-white hover:border-[1px] hover:border-white text-deep-blue dark:text-white dark:hover:text-deep-blue border-[1px] border-deep-blue dark:border-white dark:hover:bg-white">
+          <span className="flex flex-row transition duration-500 justify-center overflow-hidden flex-nowrap items-center min-h-[2.3rem] text-[1rem] font-semibold max-h-[2.6rem] w-auto max-w-[7rem] min-w-[6rem] px-1 rounded-[5px]  hover:bg-deep-blue hover:text-white hover:border-[1px] hover:border-white text-deep-blue dark:text-white dark:hover:text-deep-blue border-[1px] border-deep-blue/40 dark:border-white/40 dark:hover:bg-white">
             {resumeButton}
           </span>
           <Link
             to={`/${optionalButtonPath}`}
-            className="flex flex-row transition duration-500 justify-center overflow-hidden flex-nowrap items-center min-h-[2.3rem] text-[1rem] font-semibold max-h-[2.6rem] w-auto max-w-[7rem] min-w-[6rem] px-1 rounded-[5px]  hover:bg-deep-blue hover:text-white hover:border-[1px] hover:border-white text-deep-blue dark:text-white dark:hover:text-deep-blue border-[1px] border-deep-blue dark:border-white dark:hover:bg-white">
+            className="flex flex-row transition duration-500 justify-center overflow-hidden flex-nowrap items-center min-h-[2.3rem] text-[1rem] font-semibold max-h-[2.6rem] w-auto max-w-[7rem] min-w-[6rem] px-1 rounded-[5px]  hover:bg-deep-blue hover:text-white hover:border-[1px] hover:border-white text-deep-blue dark:text-white dark:hover:text-deep-blue border-[1px] border-deep-blue/40 dark:border-white/40 dark:hover:bg-white">
             {optionalButton}
           </Link>
         </motion.div>
@@ -101,7 +101,9 @@ const Hero = (props: {
                     size={35}
                   />
                 </Link>
-                <Link to="https://www.LinkedIn.com">
+                <Link
+                  to="https://www.linkedin.com/in/monsoon-rana-92040a206/"
+                  target="_blank">
                   <GrLinkedinOption size={32} />
                 </Link>
                 {/* <Link to="https://www.facebook.com">
@@ -110,7 +112,7 @@ const Hero = (props: {
                 <Link to="https://www.LinkedIn.com">
                   <AiOutlineInstagram size={35} />
                 </Link> */}
-                <Link to="https://www.LinkedIn.com">
+                <Link to="https://twitter.com/Monsoon_rana" target="_blank">
                   <ImTwitter size={32} />
                 </Link>
               </>

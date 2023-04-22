@@ -66,7 +66,7 @@ const Projects = () => {
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ delay: 0.6, duration: 0.5 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
                 variants={{
                   hidden: {
                     opacity: 0,
@@ -114,8 +114,8 @@ const Projects = () => {
               <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.3}}
-                transition={{ delay: 0.6, duration: 0.5 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ delay: 0.3, duration: 0.5 }}
                 variants={{
                   hidden: {
                     opacity: 0,

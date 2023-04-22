@@ -20,8 +20,8 @@ const HoverCard = (props: HoveCard) => {
     <div
       className={
         otherSection
-          ? ` md:min-h-[28.8rem] md:w-[25rem] md:h-auto lg:h-auto lg:min-h-[33.8rem] lg:min-w-[35rem] min-h-[19rem] h-auto w-[22rem] rounded-[5px]  bg-white dark:bg-deep-blue overflow-hidden cursor-pointer border-[1px] border-deep-blue dark:border-white `
-          : ` md:min-h-[16rem] md:min_w-[15rem] lg:w-20rem lg:w-[20rem] lg:min-h-[20rem] md:h-auto min-h-[19rem] h-auto w-[17rem] rounded-[5px]  bg-white dark:bg-deep-blue    overflow-hidden cursor-pointer border-[1px] border-deep-blue dark:border-white`
+          ? ` md:min-h-[28.8rem] md:w-[25rem] md:h-auto lg:h-auto lg:min-h-[33.8rem] lg:min-w-[35rem] min-h-[19rem] h-auto w-[22rem] rounded-[5px]  bg-white dark:bg-deep-blue overflow-hidden cursor-pointer border-[1px] border-gray-400 dark:border-white/20 `
+          : ` md:min-h-[16rem] md:min_w-[15rem] lg:w-20rem lg:w-[20rem] lg:min-h-[20rem] md:h-auto min-h-[19rem] h-auto w-[17rem] rounded-[5px]  bg-white dark:bg-deep-blue    overflow-hidden cursor-pointer border-[1px] border-gray-400 dark:border-white/20`
       }
       onMouseOver={() => {
         setHover(true);

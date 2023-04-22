@@ -28,16 +28,14 @@ const About = () => {
           progressBar={
             <p>
               <span>
-                Preferring to build things from the ground up, bringing ideas to
-                life through code is enjoyable.
+                I prefer to build things from the ground up, bringing ideas to
+                life through code.
               </span>
               <br />
               <br />
               <span>
-                Specializing in React, with expertise in core concepts like
-                component-based architecture and state management. Experience
-                utilizing HTML, CSS, styled and zustand components in React
-                projects.
+                I specialize in Javascript and React, with expertise in core
+                concepts like component-based architecture and state management.
               </span>
             </p>
           }
@@ -60,20 +58,21 @@ const About = () => {
         }}>
         <HoverCard
           otherSection={true}
-          hoverTransitionTitle="Designing"
-          subTitle="Designing"
+          hoverTransitionTitle="Designing & backend"
+          subTitle="Designing & backend"
           progressBar={
             <p>
               <span>
-                Simple and clean design patterns, coupled with thoughtful
-                interactions, make for a memorable user experience.
+                I enjoy creating simple and clean design patterns that are
+                combined with thoughtful interactions to create a memorable user
+                experience.
               </span>
               <br />
               <br />
               <span>
                 UI / UX, Web Apps.
-                <br /> Continual learning and skill development in Figma is an
-                ongoing goal.
+                <br /> Learning and developing my skills in Figma and MERN Stack
+                is my ongoing goal.
               </span>
             </p>
           }
