@@ -9,16 +9,16 @@ const About = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.5 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.3 }}
         variants={{
           hidden: {
-            opacity: 0,
-            x: -50,
+            opacity: 0.9,
+            y: 50,
           },
           visible: {
             opacity: 1,
-            x: 0,
+            y: 0,
           },
         }}>
         <HoverCard
@@ -44,16 +44,16 @@ const About = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.5 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.3 }}
         variants={{
           hidden: {
-            opacity: 0,
-            x: 50,
+            opacity: 0.9,
+            y: 50,
           },
           visible: {
             opacity: 1,
-            x: 0,
+            y: 0,
           },
         }}>
         <HoverCard

@@ -10,11 +10,11 @@ const SkillsPage = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.1 }}
-        transition={{ delay: 0.1, duration: 0.5 }}
+        transition={{ duration: 0.4 }}
         variants={{
           hidden: {
-            opacity: 0,
-            y: 50,
+            opacity: 0.9,
+            y: 30,
           },
           visible: {
             opacity: 1,
@@ -25,12 +25,12 @@ const SkillsPage = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ delay: 0.1, duration: 0.5 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.4 }}
             variants={{
               hidden: {
-                opacity: 0,
-                y: 50,
+                opacity: 0.9,
+                y: 10,
               },
               visible: {
                 opacity: 1,
@@ -46,12 +46,12 @@ const SkillsPage = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.4 }}
             variants={{
               hidden: {
-                opacity: 0,
-                y: 60,
+                opacity: 0.9,
+                y: 10,
               },
               visible: {
                 opacity: 1,
@@ -67,12 +67,12 @@ const SkillsPage = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ delay: 0.3, duration: 0.5 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.4 }}
             variants={{
               hidden: {
-                opacity: 0,
-                y: 70,
+                opacity: 0.9,
+                y: 10,
               },
               visible: {
                 opacity: 1,
@@ -89,12 +89,12 @@ const SkillsPage = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ delay: 0.4, duration: 0.5 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.4 }}
             variants={{
               hidden: {
-                opacity: 0,
-                y: 80,
+                opacity: 0.9,
+                y: 10,
               },
               visible: {
                 opacity: 1,
@@ -110,12 +110,12 @@ const SkillsPage = () => {
           <motion.div
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.4 }}
             variants={{
               hidden: {
-                opacity: 0,
-                y: 90,
+                opacity: 0.9,
+                y: 10,
               },
               visible: {
                 opacity: 1,
@@ -132,11 +132,11 @@ const SkillsPage = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
-            transition={{ delay: 0.6, duration: 0.5 }}
+            transition={{ duration: 0.4 }}
             variants={{
               hidden: {
-                opacity: 0,
-                y: 100,
+                opacity: 0.9,
+                y: 10,
               },
               visible: {
                 opacity: 1,

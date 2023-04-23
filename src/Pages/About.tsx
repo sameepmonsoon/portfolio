@@ -28,7 +28,7 @@ const About = () => {
             className="flex flex-row  min-h-[150px] w-full items-center justify-center px-5 gap-x-10 text-deep-blue dark:text-white md:text-xl text-base font-[400] overflow-hidden py-10 lg:mt-0 lg:py-[1rem]"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             // transition={{ type: "spring", bounce: 0.8, duration: 3 }}
             transition={{ duration: 0.5 }}
             variants={{
@@ -59,7 +59,7 @@ const About = () => {
                 className="flex flex-row h-[35px] text-deep-blue dark:text-white md:h-[50px] w-[20rem] md:w-[40rem] items-center justify-center px-5 text-[2rem] md:text-[3rem] font-[fantasy,sans] font-[500]"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.1 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
                 variants={{
                   hidden: {
@@ -79,7 +79,7 @@ const About = () => {
                   className="flex flex-col md:flex-row min-h-[100px] text-deep-blue dark:text-white md:h-[150px] w-[40rem] items-center md:items-start justify-start px-5 gap-x-10"
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: false, amount: 0.1 }}
+                  viewport={{ once: true, amount: 0.1 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                   variants={{
                     hidden: {
@@ -110,7 +110,7 @@ const About = () => {
                   className="flex flex-col md:flex-row text-deep-blue dark:text-white min-h-[100px] md:h-[150px] w-[40rem] items-center md:items-start justify-start px-5 gap-x-10"
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: false, amount: 0.1 }}
+                  viewport={{ once: true, amount: 0.1 }}
                   // transition={{ type: "spring", bounce: 0.8, duration: 3 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                   variants={{
@@ -140,7 +140,7 @@ const About = () => {
                   className="flex flex-col md:flex-row text-deep-blue dark:text-white min-h-[100px] md:h-[150px] w-[40rem] items-center md:items-start justify-start px-5 gap-x-10"
                   initial="hidden"
                   whileInView="visible"
-                  viewport={{ once: false, amount: 0.1 }}
+                  viewport={{ once: true, amount: 0.1 }}
                   transition={{ duration: 0.5, delay: 0.3 }}
                   variants={{
                     hidden: {
@@ -173,7 +173,7 @@ const About = () => {
                 className="flex flex-row h-[35px] text-deep-blue dark:text-white md:h-[50px] w-[20rem] md:w-[40rem] items-center justify-center px-5 text-[2rem] md:text-[3rem] font-[fantasy,sans] font-[500]"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.1 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
                 variants={{
                   hidden: {
@@ -192,7 +192,7 @@ const About = () => {
                 className="flex flex-col md:flex-row min-h-[100px] text-deep-blue dark:text-white md:min-h-[150px] w-[40rem] items-center md:items-start justify-start px-5 gap-x-10 h-full"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.1 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 variants={{
                   hidden: {
