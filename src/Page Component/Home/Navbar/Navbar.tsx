@@ -43,10 +43,13 @@ const Navbar = (props: NavLinks) => {
           <ToggleButton />
         </div>
       </div>
-      <div
-        onClick={handleNav}
-        className="block md:hidden text-deep-blue cursor-pointer">
-        {nav ? <IoCloseSharp size={20} /> : <RiMenuLine size={20} />}
+      <div className="flex md:hidden text-deep-blue cursor-pointer items-center justify-center">
+        <span>
+          <ToggleButton />
+        </span>
+        <span onClick={handleNav}>
+          {nav ? <IoCloseSharp size={27} /> : <RiMenuLine size={27} />}
+        </span>
       </div>
       <div
         className={
@@ -71,7 +74,6 @@ const Navbar = (props: NavLinks) => {
             {name.label}
           </Link>
         ))}
-        <ToggleButton />
       </div>
     </div>
   );
