@@ -14,7 +14,7 @@ const About = () => {
         variants={{
           hidden: {
             opacity: 0.9,
-            y: 50,
+            y: 70,
           },
           visible: {
             opacity: 1,
@@ -49,7 +49,7 @@ const About = () => {
         variants={{
           hidden: {
             opacity: 0.9,
-            y: 50,
+            y: 70,
           },
           visible: {
             opacity: 1,

@@ -14,7 +14,7 @@ const SkillsPage = () => {
         variants={{
           hidden: {
             opacity: 0.9,
-            y: 30,
+            y: 20,
           },
           visible: {
             opacity: 1,
@@ -30,7 +30,7 @@ const SkillsPage = () => {
             variants={{
               hidden: {
                 opacity: 0.9,
-                y: 10,
+                y: 20,
               },
               visible: {
                 opacity: 1,
@@ -51,7 +51,7 @@ const SkillsPage = () => {
             variants={{
               hidden: {
                 opacity: 0.9,
-                y: 10,
+                y: 20,
               },
               visible: {
                 opacity: 1,
@@ -72,7 +72,7 @@ const SkillsPage = () => {
             variants={{
               hidden: {
                 opacity: 0.9,
-                y: 10,
+                y: 20,
               },
               visible: {
                 opacity: 1,
@@ -94,7 +94,7 @@ const SkillsPage = () => {
             variants={{
               hidden: {
                 opacity: 0.9,
-                y: 10,
+                y: 20,
               },
               visible: {
                 opacity: 1,
@@ -115,7 +115,7 @@ const SkillsPage = () => {
             variants={{
               hidden: {
                 opacity: 0.9,
-                y: 10,
+                y: 20,
               },
               visible: {
                 opacity: 1,
@@ -136,7 +136,7 @@ const SkillsPage = () => {
             variants={{
               hidden: {
                 opacity: 0.9,
-                y: 10,
+                y: 20,
               },
               visible: {
                 opacity: 1,
