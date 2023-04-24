@@ -128,8 +128,8 @@ const Hero = (props: {
         transition={{ duration: 0.5 }}
         variants={{
           hidden: {
-            opacity: 0,
-            x: 100,
+            opacity: 1,
+            x: 0,
           },
           visible: {
             opacity: 1,
