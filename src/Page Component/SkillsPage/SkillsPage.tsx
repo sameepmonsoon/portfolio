@@ -21,7 +21,7 @@ const SkillsPage = () => {
             y: 0,
           },
         }}>
-        <div className="flex flex-row justify-center lg:justify-start items-center gap-x-[4rem] gap-y-[2.5rem]  flex-wrap w-full sm:w-[70%] md:w-full h-full mt-5">
+        <div className="flex flex-row justify-center lg:justify-start items-center gap-x-[3.3rem] gap-y-[2.5rem]  flex-wrap w-full sm:w-[70%] md:w-full h-full mt-5">
           <motion.div
             initial="hidden"
             whileInView="visible"
