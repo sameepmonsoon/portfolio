@@ -9,7 +9,7 @@ import { IoSchoolSharp } from "react-icons/io5";
 import { GrCertificate } from "react-icons/gr";
 import { TbCertificate } from "react-icons/tb";
 import { HiOutlineArrowLongUp } from "react-icons/hi2";
-
+import aboutImage from "../assets/monsoon.jpg";
 const About = () => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -19,7 +19,30 @@ const About = () => {
     <HomeLayout
       Children={
         <div className="pb-20">
-          <p className="dark:text-white text-deep-blue flex flex-col items-center justify-center font-[fantasy,sans] font-[1000] min-h-[13rem] md:text-start whitespace-norap capitalize h-max-[25rem] md:h-auto md:max-h-[7rem] overflow-hidden w-full">
+          <motion.div
+            className="flex flex-row min-h-[300px] w-full items-center justify-center px-5 gap-x-10 text-deep-blue dark:text-white md:text-xl text-base font-[400] overflow-hidden py-10 lg:mt-0 lg:py-[1rem]"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            // transition={{ type: "spring", bounce: 0.8, duration: 3 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: -20,
+              },
+              visible: {
+                opacity: 1,
+
+                y: 0,
+              },
+            }}>
+            <img
+              src={aboutImage}
+              className="w-[14rem] object-cover h-[14rem] p-0 rounded-[12px] cursor-pointer hover:border-gray-400 dark:hover:border-white/40 "
+            />
+          </motion.div>
+          <p className="dark:text-white text-deep-blue flex flex-col items-center justify-center font-[fantasy,sans] font-[1000] min-h-[5rem] md:text-start whitespace-norap capitalize h-max-[25rem] md:h-auto md:max-h-[7rem] overflow-hidden w-full">
             <span className="text-[3rem] sm:text-[4rem] italic text-center font-[fantasy,sans] font-[1000] whitespace-rap capitalize ">
               Sameep Monsoon Rana
             </span>
@@ -43,7 +66,7 @@ const About = () => {
               },
             }}>
             <span className="w-[60rem] border-[1px] border-gray-300 dark:border-white/30 p-5 rounded-[10px] cursor-pointer hover:border-gray-400 dark:hover:border-white/40">
-              I'm a software developer with experience in JavaScript, React, and
+              I'm a Frontend developer with experience in JavaScript, React, and
               related libraries. My passion lies in creating engaging,
               responsive user interfaces that enhance the overall user
               experience. I have an avid interest in full-stack development and

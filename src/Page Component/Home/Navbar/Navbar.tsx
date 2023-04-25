@@ -15,9 +15,9 @@ const Navbar = (props: NavLinks) => {
   };
   const location = useLocation();
   return (
-    <div className="fixed z-[10] border-b-[1px] bg-b-[0px 1px 2px fixed rgba(0, 0, 0, 0.1)] h-[64px] w-[100vw] overflow-hidden flex font-bold flex-row px-[2rem] items-center justify-center bg-white ">
+    <div className="fixed z-[10] border-b-[1px] dark:border-b-white/20 bg-b-[0px 1px 2px fixed rgba(0, 0, 0, 0.1)] h-[58px] w-[100vw] overflow-hidden flex font-bold flex-row px-[2rem] items-center justify-center bg-white ">
       <Logo />
-      <div className=" flex h-[100%] flex-row flex-1 justify-end items-center gap-5 text-[16px] text-deep-blue font-[400] font-sans">
+      <div className=" flex h-[100%] flex-row flex-1 justify-end items-center gap-5 text-[15px] text-deep-blue font-[600] font-sans">
         <div className="hidden relative uppercase md:flex  justify-center items-center gap-1">
           {LinkName.map((name, index) => (
             <Link
@@ -54,8 +54,8 @@ const Navbar = (props: NavLinks) => {
       <div
         className={
           nav
-            ? "fixed md:hidden left-0 top-0 transition-left ease-in-out duration-[600ms] flex flex-col justify-start items-start shadow-[-1px_0px_1px_1px_grey] dark:border-r-white min-w-[13.5rem] h-full bg-white dark:bg-deep-blue text-deep-blue  dark:text-white pl-5 pt-1 gap-3 uppercase overflow-hidden"
-            : "fixed md:hidden left-[-150%] top-0 transition-left ease-in-out duration-[1000ms] flex flex-col justify-start items-start shadow-[-1px_0px_1px_1px_grey] dark:border-r-white min-w-[12rem] h-full bg-white dark:bg-deep-blue text-deep-blue  dark:text-white pl-5 pt-1 gap-3 uppercase overflow-hidden"
+            ? "fixed md:hidden left-0 top-0 transition-left ease-in-out duration-[600ms] flex flex-col justify-start items-start shadow-[-1px_0px_1px_1px_grey] dark:border-r-white min-w-[14rem] h-screen bg-white dark:bg-deep-blue text-deep-blue  dark:text-white pl-5 pt-1 gap-3 uppercase overflow-hidden"
+            : "fixed md:hidden left-[-150%] top-0 transition-left ease-in-out duration-[1000ms] flex flex-col justify-start items-start shadow-[-1px_0px_1px_1px_grey] dark:border-r-white min-w-[12rem] h-screen bg-white dark:bg-deep-blue text-deep-blue  dark:text-white pl-5 pt-1 gap-3 uppercase overflow-hidden"
         }>
         <Logo otherSection={true} />
         {LinkName.map((name, index) => (
