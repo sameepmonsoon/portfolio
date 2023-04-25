@@ -139,7 +139,7 @@ const Hero = (props: {
         <img
           src={userImage ? userImage : defaulUserImage}
           alt={""}
-          className="rounded-full w-[40%] h-[40%] animate-[borderWave_10s_linear_infinite]"
+          className="rounded-full md:w-[40%] md:h-[40%] w-[60%] h-[60%] animate-[borderWave_10s_linear_infinite]"
         />
       </motion.div>
     </section>
