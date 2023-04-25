@@ -36,4 +36,5 @@ body,
   height: 100%;
   background-color: #010026;
   @apply text-white;
+  -webkit-tap-highlight-color: transparent;
 }

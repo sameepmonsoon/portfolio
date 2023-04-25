@@ -43,7 +43,7 @@ const Navbar = (props: NavLinks) => {
           <ToggleButton />
         </div>
       </div>
-      <div className="flex md:hidden text-deep-blue cursor-pointer items-center justify-center">
+      <div className="flex md:hidden text-deep-blue cursor-pointer items-center justify-center select-none">
         <span>
           <ToggleButton />
         </span>
