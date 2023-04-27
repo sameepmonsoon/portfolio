@@ -1,5 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import { BsMoonStarsFill, BsSun } from "react-icons/bs";
+import {
+  BsFillSunFill,
+  BsMoonStars,
+  BsMoonStarsFill,
+  BsSun,
+} from "react-icons/bs";
 import { FaSun } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { GiEvilMoon, GiMoonOrbit } from "react-icons/gi";
@@ -50,25 +55,15 @@ const ToggleButton = () => {
       }}
       className="cursor-pointer w-[3.3rem] h-[2.5rem] flex flex-row md:justify-end md:items-center justify-start items-center">
       {theme === "dark" ? (
-        <span
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          className="hover:animate-spin">
-          <motion.div
-            animate={{ rotate: isHovered ? 360 : 0 }}
-            transition={{ duration: 0.5 }}>
-            <FaSun size={30} />
+        <span onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <motion.div transition={{ duration: 0.5 }}>
+            <BsSun size={25} />
           </motion.div>
         </span>
       ) : (
-        <span
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          className="hover:animate-spin">
-          <motion.div
-            animate={{ rotate: isHovered ? 360 : 0 }}
-            transition={{ duration: 0.3 }}>
-            <GiEvilMoon size={30} />
+        <span onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <motion.div transition={{ duration: 0.3 }}>
+            <BsMoonStars size={25} />
           </motion.div>
         </span>
       )}

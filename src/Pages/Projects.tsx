@@ -5,12 +5,7 @@ import Card from "../Components/Card/Card";
 import HomeLayout from "../Layout/HomeLayout";
 import ProjectsComponent from "../Page Component/Projects/ProjectsComponent";
 import { motion } from "framer-motion";
-import projectCardImage from "/src/assets/character_project1.svg";
 import restaurant from "/src/assets/restaurant.svg";
-import amazon from "/src/assets/amazon-3.svg";
-import twitter from "/src/assets/twitter.svg";
-import futsal from "/src/assets/futsal.svg";
-import blood from "/src/assets/blood-doctors.svg";
 const Projects = () => {
   return (
     <HomeLayout
@@ -34,25 +29,26 @@ const Projects = () => {
                   },
                 }}>
                 <Card
-                  cardTitle="Restaurant Management System"
+                  cardTitle="Project 1"
                   cardDescription={
                     <p>
-                      Restaurant Management System is a React web application
-                      that allows restaurant managers to streamline their
-                      day-to-day operations, manage table reservations, view
-                      orders, track inventory, and view sales reports.
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam nulla dolor aspernatur molestias alias.
+                      Possimus, delectus sequi non commodi ad fugit magni
+                      consequatur laboriosam tenetur temporibus autem deserunt,
+                      obcaecati architecto.{" "}
                     </p>
                   }
                   cardImage={restaurant}
                   cardLinks={
                     <>
-                      <Link to="https://github.com/sameeprana" target="_blank">
+                      <Link to="https://github.com" target="_blank">
                         <AiFillGithub
                           className="transition duration-200 "
                           size={35}
                         />
                       </Link>
-                      <Link to="https://in.kpop.com.np" target="_blank">
+                      <Link to="https://react.dev/" target="_blank">
                         <BiLinkAlt
                           className="transition duration-200 "
                           size={35}
@@ -78,30 +74,26 @@ const Projects = () => {
                   },
                 }}>
                 <Card
-                  cardTitle="Twitter Clone"
+                  cardTitle="Project 2"
                   cardDescription={
                     <p>
-                      This is a Twitter clone app built using the MERN stack
-                      (MongoDB, Express.js, React.js, Node.js) and other
-                      technologies including Tailwind CSS, TypeScript, React
-                      Router DOM, React Icons, JWT verification, and features
-                      such as follow, like, and explore.
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam nulla dolor aspernatur molestias alias.
+                      Possimus, delectus sequi non commodi ad fugit magni
+                      consequatur laboriosam tenetur temporibus autem deserunt,
+                      obcaecati architecto.{" "}
                     </p>
                   }
-                  cardImage={twitter}
+                  cardImage={restaurant}
                   cardLinks={
                     <>
-                      <Link
-                        to="https://github.com/sameeprana/mern-twitter-clone"
-                        target="_blank">
+                      <Link to="https://github.com" target="_blank">
                         <AiFillGithub
                           className="transition duration-200 "
                           size={35}
                         />
                       </Link>
-                      <Link
-                        to="https://mern-twitter-clone.vercel.app/"
-                        target="_blank">
+                      <Link to="https://react.dev/" target="_blank">
                         <BiLinkAlt
                           className="transition duration-200 "
                           size={35}
@@ -127,30 +119,26 @@ const Projects = () => {
                   },
                 }}>
                 <Card
-                  cardTitle="Amazon Clone"
+                  cardTitle="Project 3"
                   cardDescription={
                     <p>
-                      This project is a full-stack web application clone of
-                      Amazon with MERN (MongoDB, Express, React, Node.js) stack.
-                      The application allows users to browse products, add them
-                      to the cart, and purchase them with Stripe payment gateway
-                      integration.
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam nulla dolor aspernatur molestias alias.
+                      Possimus, delectus sequi non commodi ad fugit magni
+                      consequatur laboriosam tenetur temporibus autem deserunt,
+                      obcaecati architecto.{" "}
                     </p>
                   }
-                  cardImage={amazon}
+                  cardImage={restaurant}
                   cardLinks={
                     <>
-                      <Link
-                        to="https://github.com/sameeprana/Amazon_clone"
-                        target="_blank">
+                      <Link to="https://github.com" target="_blank">
                         <AiFillGithub
                           className="transition duration-200 "
                           size={35}
                         />
                       </Link>
-                      <Link
-                        to="https://mern-amazon-clone.vercel.app/"
-                        target="_blank">
+                      <Link to="https://react.dev/" target="_blank">
                         <BiLinkAlt
                           className="transition duration-200 "
                           size={35}
@@ -176,26 +164,26 @@ const Projects = () => {
                   },
                 }}>
                 <Card
-                  cardTitle="Futsal Booking System"
+                  cardTitle="Project 4"
                   cardDescription={
                     <p>
-                      Futsal Booking System is a web application based on Django
-                      that allows players to book and pay for futsal courts
-                      online.
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam nulla dolor aspernatur molestias alias.
+                      Possimus, delectus sequi non commodi ad fugit magni
+                      consequatur laboriosam tenetur temporibus autem deserunt,
+                      obcaecati architecto.{" "}
                     </p>
                   }
-                  cardImage={futsal}
+                  cardImage={restaurant}
                   cardLinks={
                     <>
-                      <Link
-                        to="https://github.com/sameeprana/futsal-booking-system.git"
-                        target="_blank">
+                      <Link to="https://github.com" target="_blank">
                         <AiFillGithub
                           className="transition duration-200 "
                           size={35}
                         />
                       </Link>
-                      <Link to="https://in.kpop.com.np" target="_blank">
+                      <Link to="https://react.dev/" target="_blank">
                         <BiLinkAlt
                           className="transition duration-200 "
                           size={35}
@@ -203,7 +191,7 @@ const Projects = () => {
                       </Link>
                     </>
                   }
-                />{" "}
+                />
               </motion.div>
               <motion.div
                 initial="hidden"
@@ -221,28 +209,26 @@ const Projects = () => {
                   },
                 }}>
                 <Card
-                  cardTitle="Blood Donation Portal"
+                  cardTitle="Project 5"
                   cardDescription={
                     <p>
-                      Blood Donation Project is a web-based system build for
-                      donating blood. It works along with NGOs and helps to
-                      spread awareness about blood donation.
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam nulla dolor aspernatur molestias alias.
+                      Possimus, delectus sequi non commodi ad fugit magni
+                      consequatur laboriosam tenetur temporibus autem deserunt,
+                      obcaecati architecto.{" "}
                     </p>
                   }
-                  cardImage={blood}
+                  cardImage={restaurant}
                   cardLinks={
                     <>
-                      <Link
-                        to="https://github.com/sameeprana/blood-donation.git"
-                        target="_blank">
+                      <Link to="https://github.com" target="_blank">
                         <AiFillGithub
                           className="transition duration-200 "
                           size={35}
                         />
                       </Link>
-                      <Link
-                        to="https://github.com/sameeprana/blood-donation.git"
-                        target="_blank">
+                      <Link to="https://react.dev/" target="_blank">
                         <BiLinkAlt
                           className="transition duration-200 "
                           size={35}
@@ -268,29 +254,26 @@ const Projects = () => {
                   },
                 }}>
                 <Card
-                  cardTitle="Side Projects"
+                  cardTitle="Project 6"
                   cardDescription={
                     <p>
-                      Some of the completed projects include Gaming website
-                      template,Login authenticator, Product page, Redux page
-                      etc. I'm constantly working on new projects, so be sure to
-                      check back often for updates.
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Laboriosam nulla dolor aspernatur molestias alias.
+                      Possimus, delectus sequi non commodi ad fugit magni
+                      consequatur laboriosam tenetur temporibus autem deserunt,
+                      obcaecati architecto.{" "}
                     </p>
                   }
-                  cardImage={projectCardImage}
+                  cardImage={restaurant}
                   cardLinks={
                     <>
-                      <Link
-                        to="https://github.com/sameeprana?tab=repositories"
-                        target="_blank">
+                      <Link to="https://github.com" target="_blank">
                         <AiFillGithub
                           className="transition duration-200 "
                           size={35}
                         />
                       </Link>
-                      <Link
-                        to="https://github.com/sameeprana?tab=repositories"
-                        target="_blank">
+                      <Link to="https://react.dev/" target="_blank">
                         <BiLinkAlt
                           className="transition duration-200 "
                           size={35}

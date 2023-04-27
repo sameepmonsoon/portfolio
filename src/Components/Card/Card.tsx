@@ -28,7 +28,7 @@ const Card = (props: CardTypes) => {
                 mouseOver && "left-[0]"
               } h-[100%] w-[100%] transition-all ease-in-out duration-1000 z-10`
         }>
-        <div className="h-[100%] w-[100%] blur-1 absolute z-[0] bg-dark-grey/10 dark:bg-deep-blue/90 text-deep-blue dark:text-white"></div>
+        <div className="h-[100%] w-[100%] blur-1 bg-deep-blue/10 absolute z-[0] bg- dark:bg-dark-grey/10 text-deep-blue dark:text-white"></div>
         <span className="z-[10] flex flex-row gap-10 dark:text-white text-deep-blue bg-clip-text">
           {cardLinks &&
             cardLinks.props.children &&

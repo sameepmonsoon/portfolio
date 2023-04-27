@@ -21,21 +21,21 @@ const Footer = (props: FooterProps) => {
         className="order-1"
         socialMediaLinks={
           <>
-            <Link to="https://github.com/sameeprana" target="_blank">
+            <Link to="https://github.com" target="_blank">
               <AiFillGithub className=" transition duration-200 " size={28} />
             </Link>
             <Link
-              to="https://www.linkedin.com/in/monsoon-rana-92040a206/"
+              to="https://www.linkedin.com"
               target="_blank">
               <GrLinkedinOption size={25} />
             </Link>
             <Link to="https://www.facebook.com" target="_blank">
               <BsFacebook size={25} />
             </Link>
-            <Link to="https://www.instagram.com/monsoon_rana" target="_blank">
+            <Link to="https://www.instagram.com" target="_blank">
               <AiOutlineInstagram size={28} />
             </Link>
-            <Link to="https://twitter.com/Monsoon_rana" target="_blank">
+            <Link to="https://twitter.com" target="_blank">
               <ImTwitter size={25} />
             </Link>
           </>

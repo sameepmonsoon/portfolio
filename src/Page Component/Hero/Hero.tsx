@@ -6,7 +6,6 @@ import SocialMediaIcons from "../../Components/SocialMediaIcons/SocialMediaIcons
 import {
   AiFillGithub,
   GrLinkedinOption,
-  AiOutlineInstagram,
   BsFacebook,
   ImTwitter,
 } from "react-icons/all";
@@ -95,24 +94,17 @@ const Hero = (props: {
           <SocialMediaIcons
             socialMediaLinks={
               <>
-                <Link to="https://github.com/sameeprana" target="_blank">
+                <Link to="https://github.com" target="_blank">
                   <AiFillGithub
                     className=" transition duration-200 "
                     size={35}
                   />
                 </Link>
-                <Link
-                  to="https://www.linkedin.com/in/monsoon-rana-92040a206/"
-                  target="_blank">
+                <Link to="https://www.linkedin.com" target="_blank">
                   <GrLinkedinOption size={32} />
                 </Link>
-                {/* <Link to="https://www.facebook.com">
-                  <BsFacebook size={32} />
-                </Link>
-                <Link to="https://www.LinkedIn.com">
-                  <AiOutlineInstagram size={35} />
-                </Link> */}
-                <Link to="https://twitter.com/Monsoon_rana" target="_blank">
+
+                <Link to="https://twitter.com" target="_blank">
                   <ImTwitter size={32} />
                 </Link>
               </>

@@ -1,20 +1,10 @@
-import React, { useRef } from "react";
-import Card from "../Components/Card/Card";
 import HomeLayout from "../Layout/HomeLayout";
-import { useScroll, motion } from "framer-motion";
-import educationCardImage from "/src/assets/tu_svg.png";
-import educationCardImage2 from "/src/assets/chhorepatan.png";
-import { FaLaptopCode, FaSchool, FaUniversity } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { FaLaptopCode, FaSchool } from "react-icons/fa";
 import { IoSchoolSharp } from "react-icons/io5";
-import { GrCertificate } from "react-icons/gr";
 import { TbCertificate } from "react-icons/tb";
-import { HiOutlineArrowLongUp } from "react-icons/hi2";
-import aboutImage from "../assets/monsoon.jpg";
+import aboutImage from "../assets/user-avatar.jpg";
 const About = () => {
-  const targetRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: targetRef,
-  });
   return (
     <HomeLayout
       Children={
@@ -24,7 +14,6 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
-            // transition={{ type: "spring", bounce: 0.8, duration: 3 }}
             transition={{ duration: 0.5 }}
             variants={{
               hidden: {
@@ -44,7 +33,7 @@ const About = () => {
           </motion.div>
           <p className="dark:text-white text-deep-blue flex flex-col items-center justify-center font-[fantasy,sans] font-[1000] min-h-[5rem] md:text-start whitespace-norap capitalize h-max-[25rem] md:h-auto md:max-h-[7rem] overflow-hidden w-full">
             <span className="text-[3rem] sm:text-[4rem] italic text-center font-[fantasy,sans] font-[1000] whitespace-rap capitalize ">
-              Sameep Monsoon Rana
+              John Doe
             </span>
           </p>
           <motion.div
@@ -52,7 +41,6 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.1 }}
-            // transition={{ type: "spring", bounce: 0.8, duration: 3 }}
             transition={{ duration: 0.5 }}
             variants={{
               hidden: {
@@ -120,11 +108,10 @@ const About = () => {
                   </span>
                   <span>
                     <p className="text-xl font-semibold">
-                      Trubhuvan University | 2018 - Present
+                      Harvard University | 2018 - Present
                     </p>
-                    <p className="text-[17px] font-[400]">
-                      Bachelor of Information Management
-                      <br /> Asian School of Management and Technology
+                    <p className="text-[17px] font-[400] ">
+                      Bachelor of Computer Science
                     </p>
                   </span>
                 </motion.div>
@@ -152,10 +139,10 @@ const About = () => {
                   </span>
                   <span>
                     <p className="text-xl font-semibold">
-                      Higher Secondary School | 2016 - 2018
+                      Harvard University | 2018 - Present
                     </p>
-                    <p className="text-[17px] font-[400]">
-                      +2 Science <br /> Shree Chhorepatan Higher Seconday School
+                    <p className="text-[17px] font-[400] ">
+                      Bachelor of Computer Science
                     </p>
                   </span>
                 </motion.div>
@@ -181,16 +168,15 @@ const About = () => {
                   </span>
                   <span className="w-auto">
                     <p className="text-xl font-semibold">
-                      Secondary School | 2015 - 2016
+                      Harvard University | 2018 - Present
                     </p>
-                    <p className="text-[17px] font-[400]">
-                      SEE <br /> Shree Rajasthal Higher Seconday School
+                    <p className="text-[17px] font-[400] ">
+                      Bachelor of Computer Science
                     </p>
                   </span>
                 </motion.div>
               </div>
             </div>{" "}
-            {/* <span className=" lg:h-[32rem] h-[1px] lg:w-[1px] w-full bg-gray-300"></span> */}
             <div className="flex flex-col justify-start items-center gap-y-14 h-auto">
               <motion.div
                 className="flex flex-row h-[35px] text-deep-blue dark:text-white md:h-[50px] w-[20rem] md:w-[40rem] items-center justify-center px-5 text-[2rem] md:text-[3rem] font-[fantasy,sans] font-[500]"
@@ -234,18 +220,18 @@ const About = () => {
                 <span className="w-3/5 sm:w-3/4 md:w-full">
                   <p className="text-xl font-semibold ">Frontend Development</p>
                   <p className="text-[17px] font-[400]">
-                    As a React Developer for{" "}
+                    As a React Developer for
                     <a
-                      href="https://crupeesoft.com"
+                      href="https://react.dev"
                       target="_blank"
                       className="underline italic text-blue">
-                      Crupee Software Pvt. Ltd.
+                      your company.
                     </a>
-                    , I built an admin panel for a restaurant using various npm
-                    packages, and gained familiarity with cPanel and Node.js. I
-                    have also been actively involved in a Next.js side project,
-                    which has allowed me to expand my skills and stay up-to-date
-                    with the latest web development technologies.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magnam quia iure ab corporis eius sequi qui facilis
+                    molestiae sapiente incidunt blanditiis explicabo beatae
+                    delectus dignissimos doloribus, obcaecati esse corrupti.
+                    Magnam.
                   </p>
                 </span>
               </motion.div>
