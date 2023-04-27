@@ -13,7 +13,7 @@ const SocialMediaIcons = (props: { socialMediaLinks: React.ReactElement }) => {
         socialMediaLinks.props.children.map(
           (Link: React.ReactElement, index: number) => (
             <span key={index} className="group flex justify-center">
-              <span className="absolute rounded-full group-hover:bg-dark-grey/30 h-[2.8rem] w-[2.8rem] z-[-1] top-[31%]"></span>
+              <span className="absolute rounded-full group-hover:bg-deep-blue/10 h-[2.8rem] w-[2.8rem] z-[-1] top-[31%]"></span>
               {Link}
             </span>
           )

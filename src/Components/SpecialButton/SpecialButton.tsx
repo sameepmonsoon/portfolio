@@ -24,7 +24,7 @@ const SpecialButton = (props: {
       onMouseLeave={handleMouseLeave}
       type="submit"
       style={{
-        background: "#010026",
+        background: "#2CBCE9",
         border: "1px solid #ffffff",
         color: "#ffffff",
       }}

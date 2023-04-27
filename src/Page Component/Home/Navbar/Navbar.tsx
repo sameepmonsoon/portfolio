@@ -62,8 +62,8 @@ const Navbar = (props: NavLinks) => {
           <Link
             key={index}
             to={name.link}
-            className={`pt-[0px] max-w-[150px] w-[100px] h-[2rem] flex flex-row justify-start items-center border-b-[rgba(255,255,255,0.9)] text-[17px]  pl-1 hover:bg-dark-grey/20 rounded-[1px] ${
-              location.pathname == name.link && "bg-dark-grey/20"
+            className={`pt-[0px] max-w-[150px] w-[100px] h-[2rem] flex flex-row justify-start items-center border-b-[rgba(255,255,255,0.9)] text-[17px]  pl-1  hover:bg-deep-blue/10 rounded-[1px] ${
+              location.pathname == name.link && "bg-deep-blue/10"
             }`}
             onClick={() => {
               window.scrollTo({

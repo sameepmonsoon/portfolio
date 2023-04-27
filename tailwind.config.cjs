@@ -8,7 +8,8 @@ module.exports = {
         opensans: ["Open Sans", "sans-serif"],
       },
       colors: {
-        "deep-blue": "#010026",
+        white: "#f9f9f3  ",
+        "deep-blue": "#2CBCE9",
         blue: "#2CBCE9",
         red: "#DC4492",
         yellow: "#FDCC49",
